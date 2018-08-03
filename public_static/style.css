@@ -1,0 +1,204 @@
+.slideshow{
+    height:350px;
+    width:80%
+}
+.pl-6{
+padding-right: 0px;
+width:100%;
+opacity: 0.9;
+}
+
+.pl-7{
+    padding-left: 13%;
+}
+.font-size{
+    font-size: 13px;
+}
+.social-image-size{
+    height:23px;
+    width: 23px;
+}
+.asdf:hover .other-details{
+    border-bottom:1.5px solid rgb(0,162,232);
+}
+.asdf{
+    flex-grow: 0.5;
+    margin-left: 0 auto;
+}
+.more{
+    overflow: hidden;
+    clear: left;
+}
+.data{
+    padding-left: 10%;
+    padding-top: 2px;
+    
+}
+.anchor1:hover{   
+    text-decoration-line: none;
+}
+.dropdown-item:hover{
+    
+    background-color:#343434;
+    
+    
+}
+.other-details{background-color:whitesmoke;
+    overflow: hidden;    
+    border-bottom: 2px solid #f9f9f9;
+}
+.suggested-results{
+    padding:15px;
+    padding-left:auto;
+    font-size:23px;
+    text-align: center;
+    width:42rem;
+    height:70px;
+
+    
+    
+}
+.search-box{
+    z-index: 10;
+    position: absolute;
+    margin-left:15%;
+    top: 220px;
+}
+@media(max-width:600px){
+    .search-box{
+        margin-left: 10px;
+    }
+    .input-sm{
+        width:200px;
+    }
+}
+.filter{
+    position: relative;
+    top:100px;
+    height:100%;
+    right:10%;
+    width:35%;
+    white-space: nowrap;
+margin-left:10%;
+}
+#jobtype-inside,#education-inside,#salary-inside,#topschool-inside,#location-inside{
+    display:none;
+}
+#recent-searches{
+    position: absolute;
+    z-index:10;
+    top:160px;
+    padding:10px;
+    margin-left:15%;
+    padding-right: 30px;
+    font-size: 20px;
+    background-color: snow;
+    right:10%;
+    width:22%;
+    
+}
+.search input {
+    position: absolute;
+    width: 0px;
+    float: Left;
+    margin-left: 500px;
+    
+    transition: all 0.7s ease-in-out; 
+    height: 50px;
+    line-height: 18px;
+    padding: 0 2px 0 2px;
+    border-radius:1px;
+}
+.search:hover input, .search input:focus {
+    width: 500px;
+    margin-left: -50px;
+}
+.btn-primary{
+    position: absolute;
+    left: 355px;
+height: 50px;
+width:200px;
+}
+.search {
+    
+    width: 400px;
+    height: 30px;    
+    line-height: 22px;
+}
+
+.asdf:hover{
+    background-color: beige;
+}
+.page-link{
+    background-color:#63d13e
+}
+.border-0:hover{
+    text-decoration: underline;
+}
+.page-numbers{
+    display: flex;    
+}
+.search-form input.hover-input-search::input-placeholder {
+    display: none;
+  }
+  .hover-input-search{
+position: absolute;
+width: 35px;
+left:442px;
+height:35px;
+border-radius:50%;
+margin: 5px;
+}
+ .form-control-feedback:hover~.hover-input-search,.hover-input-search:hover{
+transition: all 1s,border-radius 0s;
+width: 474px;
+left: 0px;
+
+border-radius: 25px;
+border-top-left-radius: 0px;
+border-bottom-left-radius: 0px;
+border: 1px solid white;
+}
+ .form-control-feedback {
+    position: relative;
+    top:2px;
+    left: 445px;
+    z-index: 10;
+
+    width: 34px;
+    height: 30px;
+    line-height: 10px;
+    color: #3596e0;
+  }
+  #myBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 50px;
+    right: 30px; 
+    z-index: 99; 
+    border:1px red;
+    border-radius:50%; 
+    outline: none; 
+    color: white; 
+    cursor: pointer;
+    padding: 15px; 
+    
+    font-size: 18px; 
+  }
+  
+  #myBtn:hover {
+    background-color: #555; 
+  } 
+  .page-table{
+      border-collapse: collapse;text-align: left;
+      margin: 30px auto 30px;
+  }
+  @media(max-width:1000px){
+      .filter{
+          display: none;
+      }}
+      @media(max-width:1200px){
+      #recent-searches{
+          display: none;
+      }
+  }

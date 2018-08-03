@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+</head>
+<body>
+        <nav class="navbar navbar-expand-lg  navbar-dark  fixed-top " style="background-color: rgba(247,238,238,0.5)">
+                <a href="https://www.naukri.com/"><img class="navbar-brand ml-5" id="brand" src="Untitled.png" alt="logo">
+                </a>    
+            <button class="navbar-toggler bg-dark " type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon " ></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                        
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                      <a class="nav-link text-dark" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link text-dark dropdown-toggle" href="#"  id="navbardrop" data-toggle="dropdown">Jobs</a>
+                      <div class="dropdown-menu p-0">
+                        
+    <div  style="background-color: #343a40" >                    
+        
+        <form action="" class="search-form">
+    
+            <label for="search" class="sr-only">Search</label>
+            <img class="form-control-feedback" src="https://cdn1.iconfinder.com/data/icons/hawcons/32/698838-icon-111-search-128.png">
+            <input type="text" class="hover-input-search" name="search" id="search" placeholder="search">
+              
+    </form>
+    <div style='display: flex;border-top: solid 1px grey;'>             
+        <span class="m-2"><span style="color: gray;">Job Titles</span>
+            <a class="dropdown-item text-light" href="#">English Teacher</a>
+            <a class="dropdown-item text-light" href="#">Science Teacher</a>
+            <a class="dropdown-item text-light" href="#">Primary Teacher</a>
+            <a class="dropdown-item text-light" href="#">Math Teacher</a>
+            <a class="dropdown-item text-light" href="#">Physics Teacher</a>
+            <a class="dropdown-item text-light" href="#">Nursery Teacher</a>
+            <a class="dropdown-item text-light" href="#">French Teacher</a>
+            <a href="#" >view all</a>                        
+        </span>
+                        <span class="m-2 "><span style="color: gray;">Location</span>
+                            <a class="dropdown-item text-light" href="#">Jobs in Delhi</a>
+                            <a class="dropdown-item text-light" href="#">Jobs in Mumbai</a>
+                            <a class="dropdown-item text-light" href="#">Jobs in Chennai</a>
+                            <a class="dropdown-item text-light" href="#">Jobs in Chandigarh</a>
+                            <a class="dropdown-item text-light" href="#">Jobs in Pune</a>
+                            <a class="dropdown-item text-light" href="#">Jobs in Kolkata</a>
+                            <a class="dropdown-item text-light" href="#">Jobs in Jaipur</a>
+                            <a href="#" >View all</a>
+                        </span>
+                        <span class="m-2"><span style="color: gray;">Qualification</span>
+                            <a class="dropdown-item text-light" href="#">B.Ed</a>
+                            <a class="dropdown-item text-light" href="#">B.A</a>
+                            <a class="dropdown-item text-light" href="#">B.Sc</a>
+                            <a class="dropdown-item text-light" href="#">B.Tech</a>
+                            <a class="dropdown-item text-light" href="#">B.B.A</a>
+                            <a class="dropdown-item text-light" href="#">M.Ed</a>
+                            <a class="dropdown-item text-light" href="#">DIET</a>
+                            <a href="#" >view all</a>
+    
+                        </span>
+    </div></div>
+    </div>
+    </li>                
+    
+                
+                    
+                    <li class="nav-item dropdown">
+                      <a class="nav-link text-dark dropdown-toggle" href="#" data-toggle="dropdown">Carrer advice</a>
+                      <div class="dropdown-menu p-0">
+                          <div style="background-color:#343a40">
+                            <a class="dropdown-item text-light" href="#">Job Searching tips</a>
+                            <a class="dropdown-item text-light" href="#">CV writing tips</a>
+                            <a class="dropdown-item text-light" href="#">Interview Preparation</a>
+                            <a class="dropdown-item text-light" href="#">Expert speak</a>
+                            <a class="dropdown-item text-light" href="#">FAQ</a>
+                            <a class="dropdown-item text-light" href="#">Carrer Advice</a>
+                            <a href="#">view all</a>
+                          </div>
+                      </div>
+                    </li>
+                    
+                  </ul>
+                  <form class="search form form-inline my-2 my-lg-0">
+                        </form>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown">
+                            <a class="nav-link text-dark dropdown-toggle" href="#" data-toggle="dropdown">For Employers</a>
+                            <div class="dropdown-menu p-0">
+                                    <div style="background-color: #343a40;display: flex;">
+                                        <div>    
+                                        <a class="dropdown-item text-light" href="#">CV Search</a>
+                                            <a class="dropdown-item text-light" href="#">Job Posting</a>
+                                            <a class="dropdown-item text-light" href="#">Employer Branding</a>
+                                            </div>
+                                            <div>
+                                            <a class="dropdown-item text-light" href="#">Login</a>
+                                            <a class="dropdown-item text-light" href="#">Register</a>
+                                            <a class="dropdown-item text-light" href="#">Try free CV Search</a>
+                                                </div>
+                                    </div>
+                            </div>
+                    </li>
+                </ul>
+                <a class="btn btn-outline-success ml-2" href="/login/index.html">Login</a>
+                <a class="btn btn-outline-warning ml-2 " href="/signup/index.html">SignUp</a>
+    
+                </div>
+              </nav>
+             
+              <button class="btn btn-info"onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<div class="container-fluid p-0"  style="height:500px;width: 100%;background-image:url(http://hdlatestwallpaper.com/wp-content/uploads/2014/04/3D-Red-and-Black-Blocks-HD-Wallpaper.jpg);">
+              <div  class=" row border  p-2 m-3   asdf" style="width:42rem;">
+                    
+                    <div class="text-info ml-auto mr-auto" style="text-align: center">
+                        Primary
+                        <b>School Teacher</b>
+                        in KP EDUCATIONAL ACADEMY
+                    </div>
+                    <span class="bk-warning rupees" >
+                        <!-- <em></em>  -->
+                        </span>
+                        
+                        <span class="pl-5 text-dark" >
+                    Salary:Not disclosed
+                    </span>
+                    <span class="pl-5 text-dark">Work-Experience: 1-6 yrs</span>
+                    <div class="more text-dark">
+                        <span class='mb-0 p-2' style="display: flex; ">
+                        <div>Keyskills:</div>
+                        <div class="pl-5 text-dark">Primary Teacher,Pre Primary Teacher,montessori,nursery teachers,nursery...</div>
+                        </span>
+                        
+                        <span class='mb-2' style="display:flex; ">
+                        <div>&nbsp;&nbsp;Job: description</div>
+                        <div class="pl-4 text-dark">We are Hiring primary School Teachers requirement in Acroos Hyderabad .
+                            Subjects to be known are...</div>
+                        </span>
+                    </div>
+                    <span class="ml-auto mr-auto">
+                   <a class="btn btn-warning  mr-5 p-3" href="#">Login/Register to Apply</a>
+                    <a class="btn btn-success  ml-5 p-3" href="#">Apply without Registration</a>
+                        </span>
+                        </div>
+                     
+                
+            </div>
+            <span style="display: flex;">
+            <div class="description border p-4"     >
+                <h5><b >Job Description</b></h5>
+We are Hiring primary School Teachers requirement in Acroos Hyderabad .
+Subjects to be known are .....
+Syllabus to be familiar with are State board.(ALL SUBJECTS)
+Faculty for Primary School
+
+<br><br>
+<b>KeySkills</b>: 
+<br>
+<ul style="display:flex;list-style-type: none;flex-wrap: wrap;padding:20px;font-size: 15px;">
+<li class="bg-info m-1 p-2" >Primary Teacher</li>
+<li class="bg-info m-1 p-2"> Pre Primary Teacher</li>
+<li class="bg-info m-1 p-2"> montessori</li>
+<li class="bg-info m-1 p-2"> nursery teachers</li>
+<li class="bg-info m-1 p-2"> nursery teaching</li>
+<li class="bg-info m-1 p-2"> nursery education</li>
+<li class="bg-info m-1 p-2"> Primary School Teacher</li>
+<li class="bg-info m-1 p-2"> secondary school teacher</li>
+<li class="bg-info m-1 p-2"> secondary school trainer</li>
+<li class="bg-info m-1 p-2"> primary school trainer</li>
+<li class="bg-info m-1 p-2"> primary school faculty</li>
+
+</ul>
+<br><br>
+<h6>Desired Candidate Profile</h6><br>
+Please refer to the Job description above
+<br>
+Education-<br>
+<div class="mr-5" style="display:flex">
+    <span class="text-secondary">UG:</span>
+    <span>Any Graduate - Any Specialization</span>
+</div>
+<div style="display:flex">
+<span class="text-secondary">PG:</span>
+<span>Postgraduate not required</span>
+</div>
+<br><br>
+
+
+
+<div style="display:flex">
+    <div class="mr-4" style="color:gray;">Salary:<br>Industry:<br>Functional Area:<br>
+        Role Category:<br>Role:<br>Employment Type: </div>
+    <div> Not Disclosed by Recruiter
+        <br>Education / Teaching / Training<br>Teaching , Education , Training , Counselling<br>
+        Teachers<br>Teacher/Private Tutor<br>Permanent Job, Full Time</div>
+</div>
+<br>
+<h5 class="border-top border-dark ">Company Profile:</h5>
+<br>
+<h6>KP EDUCATIONAL ACADEMY    </h6>
+
+We are Hiring Primary School Teachers All Subjects Acroos Hyderabad
+
+<br><br>
+<a class="contact-details active " style="text-decoration: none"  ><h4>View Contact details</h4></a>
+
+<div class="contact-details-div border-top border-dark" >
+<div class="mr-4 " style="color:gray;">
+Recruiter name<br>Contact Company<br>Address:<br>Email Address:<br>Telephone:
+</div>
+<div>P Kiran Kumar<br>KP EDUCATIONAL ACADEMY <br>Hyderabad <br>kiran@kpedu.com<br>
+    8800965292
+
+</div>    
+
+</div>
+</div>
+<div class="notification-fixed p-4">Get new jobs for this search by email
+    <div>My Email:<br>
+    <input type="email" class="input-email">
+    <br>
+    <input type="checkbox">
+    Also get an email with jobs recommended just for me
+    <br>
+    <a class="mt-2 btn btn-outline-secondary">Activate</a>
+        
+</div>
+
+  </div>
+</span>
+<div class=" again-buttons">
+    <span  >
+    <a class="btn btn-warning  ml-5 mr-5 p-3" href="#">Login/Register to Apply</a>
+     <a class="btn btn-success  ml-5 p-3" href="#">Apply without Registration</a>
+         </span>
+</div>
+<div class="container-fluid col-10 p-0" style="color:gray">IEIL has taken all reasonable steps to ensure that information on this site is authentic. Applicants are advised to research bonafides of advertisers independently. IEIL shall not have any responsibility in this regard. We also recommend that you visit Security Guidelines and Terms and Conditions for more comprehensive information on this aspect.
+
+        Salary trends in over 3500 Companies
+        
+         View Salaries
+        </div>
+<footer class="bg-dark container-fluid pl-5">
+        <div class="row ">
+          <div class="column col-4 ">
+              <b class=" text-light font-size"><h6>Information</h6></b>
+              <ul class="list-unstyled">
+                  <li><a class="  text-light font-size " href="#"> About Us</a></li>
+                  <li><a class="link  text-light font-size " href="#">Terms and Conditions</a></li>
+                  <li><a class="link  text-light font-size " href="#">Privacy Policy</a></li>
+                  <li><a class="link  text-light font-size " href="#">Carrers with us</a></li>
+                  <li><a class="link  text-light font-size " href="#">Contact Us</a></li>
+                  <li><a class="link  text-light font-size " href="#">FAQs</a></li>
+                  <li><a class="link  text-light font-size " href="#">Notices</a></li>
+              </ul>
+          </div>
+          <div class="column col ">
+              <b class=" text-light font-size"><h6>Jobs by places</h6></b>
+              <ul class="list-unstyled">
+            <li><a class="link  text-light font-size " href="#"> India </a></li>
+            <li><a class="link  text-light font-size " href="#"> Delhi </a></li>
+            <li><a class="link  text-light font-size" href="#"> Chandigarh </a></li>
+            <li><a class="link  text-light font-size" href="#"> Banglore </a></li>
+            <li><a class="link  text-light font-size" href="#"> Chennai </a></li>
+            <li><a class="link  text-light font-size" href="#"> Kolkata </a></li>
+            <li><a class="link  text-light font-size" href="#"> Gurugram </a></li>
+            <li><a class="link  text-light font-size" href="#"> Mumbai </a></li>
+          </div>
+          <div class="column col-4">
+             <div class="font-size text-light"> Follow us</div>
+             <ul class="list-unstyled">
+                 <li>
+                    <a class="  text-light font-size nounderline" href="#">  <img  class="social-image-size "src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/facebook_square-512.png"> </a>
+                    <a class="  text-light font-size nounderline" href="#">  <img  class="social-image-size "src="https://d1afx9quaogywf.cloudfront.net/sites/default/files/Logos/Instagram-v051916_0.png"> </a>
+                    <a class="  text-light font-size nounderline" href="#">  <img  class="social-image-size "src="https://pbs.twimg.com/profile_images/1013798240683266048/zRim1x6M_400x400.jpg"> </a>
+                </li>
+             </ul>
+          </div>
+        </div>
+        <div class="footer-copyright text-center py-2 text-light">© 2018 Copyright Jobsforteachers
+          </div>
+        </footer>
+        </body>
+</html>
