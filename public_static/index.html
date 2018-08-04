@@ -555,15 +555,18 @@ class="content active " style="width: 100%" target="_blank">
 <div style="width:100%;" id="location" class="mr-0  filter-on-click"><a class='btn-light btn ' style="width:100%;text-align: left;">
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdxBGhE3sABqTG4g6Ddrmx-HwQoUor0ygvP-6H-YD3uQfZvzzY" height="12">
     Location</a>
-<div id="location-inside">
+</div>
+    <div id="location-inside">
     
-<input type="checkbox">Delhi<br>
-<input type="checkbox">Delhi NCR<br>
-<input type="checkbox">Gurgaon<br>
-<input type="checkbox">Bengaluru<br>
-<input type="checkbox">Other Locations
+<label><input type="checkbox" >Delhi</label><br>
+<label><input type="checkbox">Delhi NCR</label><br>
+<label><input type="checkbox">Gurgaon</label><br>
+<label><input type="checkbox">Bengaluru</label><br>
+<label id="morelocations"  style="color: blue;">more</label>
+
 </div>
-</div>
+
+
 <div style="width:100%;" id="topschools" class="mr-0 filter-on-click"><a class='btn-light btn' style="width:100%;text-align: left;">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdxBGhE3sABqTG4g6Ddrmx-HwQoUor0ygvP-6H-YD3uQfZvzzY" height="12">
 Top Schools</a>
@@ -574,24 +577,25 @@ Top Schools</a>
 <div style="width:100%;" id="salary" class="mr-0 filter-on-click"><a class='btn-light btn' style="width:100%;text-align: left;">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdxBGhE3sABqTG4g6Ddrmx-HwQoUor0ygvP-6H-YD3uQfZvzzY" height="12">
 Salary</a>
-
+</div>
 <div id="salary-inside">
-<input type="checkbox">0-3 Lakhs<br>
-<input type="checkbox">3-6 Lakhs<br>
-<input type="checkbox">6-10 Lakhs<br>
-<input type="checkbox">10-15 Lakhs<br>
-<input type="checkbox">15-25 Lakhs<br>
+<label><input type="checkbox">0-3 Lakhs</label><br>
+<label><input type="checkbox">3-6 Lakhs</label><br>
+<label><input type="checkbox">6-10 Lakhs</label><br>
+<label><input type="checkbox">10-15 Lakhs</label><br>
+<label><input type="checkbox">15-25 Lakhs</label><br>
+
 </div>
-</div>
+
 <div style="width:100%;" id="education" class="mr-0 filter-on-click"><a class='btn-light btn' style="width:100%;text-align: left;">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdxBGhE3sABqTG4g6Ddrmx-HwQoUor0ygvP-6H-YD3uQfZvzzY" height="12">
 Education</a>
 <div  id="education-inside">
-        <input type="checkbox">Any Graduate<br>
-        <input type="checkbox">B.Ed<br>
-        <input type="checkbox">B.A<br>
-        <input type="checkbox">M.Com<br>
-        <input type="checkbox">Any Postgraduate<br>
+    <label><input type="checkbox">Any Graduate</label><br>
+        <label><input type="checkbox">B.Ed</label><br>
+            <label><input type="checkbox">B.A</label><br>
+                <label><input type="checkbox">M.Com</label><br>
+                    <label><input type="checkbox">Any Postgraduate</label><br>
         </div>
 </div>
 <div style="width:100%;" id="jobtype" class="mr-0 filter-on-click"><a class='btn-light btn' style="width:100%;text-align: left;">
@@ -662,6 +666,41 @@ Job Type</a>
 </div>
 <div class="footer-copyright text-center py-2 text-light">© 2018 Copyright Jobsforteachers
   </div>
+
 </footer>
+
+
+<div id="morelocations-details" style="display:none;">
+    <div class="border border-secondary text-secondary p-2"style="text-align: center">
+        <b >Location</b>
+        <div id="cross-icon">X</div>
+    </div>
+    <div style="padding: 40px;">
+        <label><input type="checkbox" >Delhi</label>
+        <label style="float:left"><input type="checkbox">Delhi NCR</label><br>
+        <label><input type="checkbox">Gurgaon</label>
+        <label style="float: left"><input type="checkbox">Bengaluru</label><br>
+        <label><input type="checkbox">Bengaluru</label>
+        <label style="float: left"><input type="checkbox">Hyderabad</label><br> 
+        <label><input type="checkbox">Mumbai</label>
+        <label style="float:  left"><input type="checkbox">Pune</label><br>
+        <label><input type="checkbox">Gwalior</label>
+        <label style="float:  left"><input type="checkbox">Chennai</label><br>
+        <label><input type="checkbox">Jaipur </label>
+        <label style="float: left"><input type="checkbox">Noida</label><br>
+        <label><input type="checkbox">Ghaziabad</label>
+        <label style="float:  left"><input type="checkbox">Coimbatore </label><br>
+        <label><input type="checkbox">Ahmedabad</label>
+        <label style="float:  left"><input type="checkbox">Meerut</label><br>
+        <label><input type="checkbox">Surat </label>
+        <label style="float:  left"><input type="checkbox">Kolkata</label><br>
+         <label><input type="checkbox">Bhopal</label>
+        <label style="float:  left"><input type="checkbox">Indore </label><br>
+        <label><input type="checkbox">Kanpur </label>
+        <label style="float:  left"><input type="checkbox">Greater Noida </label></div>
+        
+
+</div>
+
 </body>
 </html>

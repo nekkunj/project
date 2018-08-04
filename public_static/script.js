@@ -21,6 +21,8 @@ $(()=>{
     var salary=$('#salary')
     var education=$('#education')
     var jobtype=$('#jobtype')
+    var morelocationdetails=$('#morelocations-details')
+    var crossicon=$('#cross-icon')
     location.click(()=>{
     $('#location-inside').toggle();
     })
@@ -86,8 +88,45 @@ function cards(recruiters){
      cards(recruiters) 
 })
 
+$('#morelocations').click(()=>{
+    
+morelocationdetails.css('display','block');
+morelocationdetails.css('z-index','1100')
+morelocationdetails.css('position','fixed')
+morelocationdetails.css('border','2px solid gray')
+morelocationdetails.css('left','10%')
+morelocationdetails.css('top','15%')
+morelocationdetails.css('background-color','white')
+morelocationdetails.css('width','750px')
+morelocationdetails.css('height','auto')
+
+
 
 })
 
 
+ morelocationdetails.click((event)=>{
+    event.stopPropagation(),
+morelocationdetails.css('display','block');
+
+ })
+ $('#morelocations').click((event)=>{    
+    event.stopPropagation(),
+morelocationdetails.css('display','block');
+
+ })
+
+$('body').click(()=>{
+    console.log(' world'),
+    morelocationdetails.css('display','none');
+})
+
+crossicon.click((event)=>{    
+    event.stopPropagation(),
+morelocationdetails.css('display','none');
+ })
+
+ 
+
+})
 

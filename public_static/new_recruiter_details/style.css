@@ -203,3 +203,30 @@ border: 1px solid white;
     background-color: DodgerBlue !important; 
     color: #ffffff; 
   }
+  body{
+    font: normal 12px Arial, Helvetica, sans-serif;
+  }
+  .low-icon{
+    background-color: #C9D8FC;
+   cursor: pointer; 
+   float: right;
+  }
+  .ddsearch{
+    border: 1px solid #ccc;
+    background: #fff;
+    min-height: 0;
+  }
+  ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    cursor: text;
+  }
+  .ddwn li input{
+    outline: 0;
+    border: 0;
+    width: 100%;
+    padding: 5px 0;
+    margin: 0;
+  }
+  

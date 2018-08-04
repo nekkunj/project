@@ -170,10 +170,10 @@
             <option selected="selected">Min Annual Salary</option>
             
         </select>
-        <span class="m-1" id="max-annual-salary">to</span> 
-        <select class="m-1">
+        <span class="m-1" >to</span> 
+        <select class="m-1" id="max-annual-salary">
             <option selected="selected">Max Annual Salary</option>
-            <option>20000000</option>
+            
         </select>
         <div>
         <input type="checkbox">Hide Salary from jobseekers</div>
@@ -189,7 +189,30 @@
         </div>
         <div class="row p-4">
             <label>* Location(s) of Job:</label>
-           <div class="autocomplete"> <input id="location" type="text" id="location-auto-search" name="myCountry" placeholder="Country" maxlength="5" style="width: 100px;"></div>
+           <div style="width: 490px;float: left;"> 
+               <div class="ddwn" style="width: 76%;">
+<div  style="position: relative;z-index: 1;">
+<span class="low-icon">
+    <img class=" mr-2  "src="https://cdn1.iconfinder.com/data/icons/education-set-7/512/arrow3-down-512.png" width="10" height="10"  >
+</span>
+
+        <div style="padding: 0 25px 0 5px;"> 
+            <input type="text" class="srchTxt" id="inpNaukContainerDD2"  tnmdependent="hid_location"  autocomplete="off" 
+            style="color: rgb(68, 68, 68);">
+        </div>
+</div>
+<div class="drop" style="border-top: 0px;display: none;width: 370px;">
+    <div style="height: 300px;">
+        <ul class="ChkboxEnb">
+                <li class="pickVal" bindto="A">
+                    <a href="" data-id="location_25.9.31" class="chkd">Delhi/NCR</a>
+                </li>
+
+        </ul>
+    </div>
+</div>
+</div>
+           </div>
         </div>
         <div class="row p-4">
             <label>Industry:</label>

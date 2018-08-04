@@ -200,5 +200,25 @@ border: 1px solid white;
       @media(max-width:1200px){
       #recent-searches{
           display: none;
+        
       }
   }
+  .drop ul.ChkboxEnb li a.chkd{
+    background-position: -42px -103px;
+    background-color: #09F;
+  }
+label{
+    cursor: pointer;
+}
+#cross-icon{
+float: right;
+border:gray 1px solid;
+width: 30px;
+border-radius: 50%;
+color: gray;
+cursor: pointer;
+}
+#morelocations-details label{
+    width: 200px;
+    margin-right: 120px;
+}
