@@ -187,9 +187,31 @@
             <label>Number of Vacancies:</label>
             <input type="text" maxlength="5" style="width: 100px;">
         </div>
-        <div class="row p-4">
-            <label>* Location(s) of Job:</label>
-           <div style="width: 490px;float: left;"> 
+
+
+
+        <div class="row p-4 ">
+            <label><span class="text-danger">*</span>Location(s) of Job:</label>
+<div class="locations-for-job">
+            <div style="width: 400px;">
+               <div style="border: 1px black solid">  
+            <input type="text" class="srchTxt" id="inpNaukContainerDD2"   placeholder="select or start typing locations" style="width:374px;"  autocomplete="off" 
+            style="color: rgb(68, 68, 68);">
+            <span class="low-icon" >
+                <img class=" ml-1  "src="https://cdn1.iconfinder.com/data/icons/education-set-7/512/arrow3-down-512.png" width="10" height="10"  >
+            </span>
+
+        </div>
+        <div id="location-list" style="display: none">
+                
+        </div>
+</div>
+
+<div id="selected-locations" class="border border-secondary">
+
+</div>
+           </div>
+            <!-- <div style="width: 490px;float: left;"> 
                <div class="ddwn" style="width: 76%;">
 <div  style="position: relative;z-index: 1;">
 <span class="low-icon">
@@ -212,7 +234,7 @@
     </div>
 </div>
 </div>
-           </div>
+           </div> -->
         </div>
         <div class="row p-4">
             <label>Industry:</label>

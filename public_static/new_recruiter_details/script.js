@@ -1,17 +1,19 @@
-
+let places=["Agra","Ahmedabad","Alappuzha","Alwar","Amritsar","Aurangabad","Bangalore","Bharatpur","Bhavnagar","Bikaner","Bhopal","Bhubaneshwar","BodhGaya","Calangute","Chandigarh","Chennai","Chittaurgarh","Coimbator","Cuttack","Dalhousie","Dehradun","Delhi","Diu-Island","Ernakulam","Faridabad","Gaya","Gangtok","Ghaziabad","Gurgaon","Guwahati","Gwalior","Haridwar","Hyderabad","Imphal","Indore","Jabalpur","Jaipur","Jaisalmer","Jalandhar","Jamshedpur","Jodhpur","Junagadh","Kanpur","Kanyakumari","Khajuraho","Khandala","Kochi","Kodaikanal","Kolkata","Kota","Kottayam","Kovalam","Lucknow","Ludhiana","Madurai","Manali","Mangalore","Margao","Mathura","Mountabu","Mumbai","Mussoorie","Mysore","Manali","Nagpur","Nainital","Noida","Ooty","Orchha","Panaji","Patna","Pondicherry","Porbandar","Portblair","Pune","Puri","Pushkar","Rajkot","Rameswaram","Ranchi","Sanchi","Secunderabad","Shimla","Surat","Thanjavur","Thiruchchirapalli","Thrissur","Tirumala","Udaipur","Vadodra","Varanasi","Vasco-Da-Gama","Vijayawada","Visakhapatnam"]
+let i=0;
 $(()=>{
     var minimumyear=$('#minimum-year')
     var maximumyear=$('#maximum-year')
     var rsordollar=$('#rs-or-dollar')
     var minannualsalary=$('#min-annual-salary')
     var maxannualsalary=$('#max-annual-salary') 
-
+    var locationlist=$('#location-list')
     var submit_button=$('#submit-button')
     var location=$('#location')
     var job_description=$('#job-description')
     var keywords=$('#keywords')
     var job_title=$('#job-title')
-
+    var selectedlocations=$('#selected-locations')
+    var locationlistlabel=$('.location-list-label')
     for(var i=0;i<=25;i++){
     minimumyear.append(`<option class="minimum-options">${i}</option>`)
     }
@@ -112,13 +114,40 @@ rsordollar.click(()=>{
       job_type:'Full Time'
      })
    })
-$('.low-icon').click(()=>{
+
+$('.low-icon').click(function(){
+ if(i%2===0){
+    locationlist.css('display','block')
+    for(place of places){    
+    locationlist.append(`
+    <label ><input class="location-list-label" type="checkbox">${place}</label><br>
+    `)
+    }
+ }
+ else{
+    locationlist.css('display','none')
+ }
+i++
+})
+
+locationlist.click(()=>{
     
 
-   $('.drop').css("border-top","0px");
-   $('.drop').css("display","block");
-   $('.drop').css("width","370px");
+selectedlocations.append(`
+<div class="bg-light">Selected-Locations
+<span style="float:right"><a href="#">[Remove all]</a></span>
+</div>
+<div>
+<span class="m-1" style="background-color:gray;">
+${locationlistlabel.val()}
+<span>
+</div>
+`)
 })
- 
+
+
+
+
+
 
 })
