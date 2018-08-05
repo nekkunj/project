@@ -176,3 +176,19 @@ border: 1px solid white;
     
     
 }
+.check{
+    
+    /* background-color: yellow; */
+    position: fixed;
+    top: 130px;
+    right: 955px;
+    
+padding: 30px;
+}
+.check div{
+    background-color: yellow;
+margin: 10px;
+    visibility: hidden;
+    width: 100%;
+    padding: 5px;
+}

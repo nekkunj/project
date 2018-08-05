@@ -1,6 +1,40 @@
 let places=["Agra","Ahmedabad","Alappuzha","Alwar","Amritsar","Aurangabad","Bangalore","Bharatpur","Bhavnagar","Bikaner","Bhopal","Bhubaneshwar","BodhGaya","Calangute","Chandigarh","Chennai","Chittaurgarh","Coimbator","Cuttack","Dalhousie","Dehradun","Delhi","Diu-Island","Ernakulam","Faridabad","Gaya","Gangtok","Ghaziabad","Gurgaon","Guwahati","Gwalior","Haridwar","Hyderabad","Imphal","Indore","Jabalpur","Jaipur","Jaisalmer","Jalandhar","Jamshedpur","Jodhpur","Junagadh","Kanpur","Kanyakumari","Khajuraho","Khandala","Kochi","Kodaikanal","Kolkata","Kota","Kottayam","Kovalam","Lucknow","Ludhiana","Madurai","Manali","Mangalore","Margao","Mathura","Mountabu","Mumbai","Mussoorie","Mysore","Manali","Nagpur","Nainital","Noida","Ooty","Orchha","Panaji","Patna","Pondicherry","Porbandar","Portblair","Pune","Puri","Pushkar","Rajkot","Rameswaram","Ranchi","Sanchi","Secunderabad","Shimla","Surat","Thanjavur","Thiruchchirapalli","Thrissur","Tirumala","Udaipur","Vadodra","Varanasi","Vasco-Da-Gama","Vijayawada","Visakhapatnam"]
 let i=0;
+let j=0
+function showselectedlocations(jui){
+ 
+    var value=jui.val();
+ var check=jui.prop('checked')
+if(check){
+
+    j++;
+let selectedlocations=$('#selected-locations')
+selectedlocations.css('display','block');
+
+selectedlocations.append(`
+<div class="m-1 " style="display:inline-block">
+<span class="" id="${value}" style="background-color:gray;padding:4px;">
+${value}
+<span>
+</div>
+ `)}
+ else{
+    $(`#${value}`).remove();
+    j--;  
+    if(j===0){
+let selectedlocations=$('#selected-locations')
+        selectedlocations.append('')
+        selectedlocations.css('display','none');
+    }
+    
+ }
+
+}
+
+
+
 $(()=>{
+    var selectedlocations=$('#selected-locations')
     var minimumyear=$('#minimum-year')
     var maximumyear=$('#maximum-year')
     var rsordollar=$('#rs-or-dollar')
@@ -12,8 +46,8 @@ $(()=>{
     var job_description=$('#job-description')
     var keywords=$('#keywords')
     var job_title=$('#job-title')
-    var selectedlocations=$('#selected-locations')
-    var locationlistlabel=$('.location-list-label')
+    var removeall=$('#remove-all')
+    // var locationlistlabel=document.getElementsByClassName('.location-list-label')
     for(var i=0;i<=25;i++){
     minimumyear.append(`<option class="minimum-options">${i}</option>`)
     }
@@ -100,7 +134,6 @@ rsordollar.click(()=>{
 
 })
    submit_button.click(()=>{
- console.log(`${job_title.val()}\n${job_description.val()}\n${keywords.val()}\n${minimumyear.val()}`)   
     $.post('/api',{
       Job_Title:job_title.val(),
       Job_Description:job_description.val(),
@@ -115,12 +148,14 @@ rsordollar.click(()=>{
      })
    })
 
+   
 $('.low-icon').click(function(){
+    event.stopPropagation();
  if(i%2===0){
     locationlist.css('display','block')
     for(place of places){    
     locationlist.append(`
-    <label ><input class="location-list-label" type="checkbox">${place}</label><br>
+    <label ><input class="location-list-label"  value="${place}" type="checkbox" onclick="showselectedlocations($(this))" >${place}</label><br>
     `)
     }
  }
@@ -130,24 +165,29 @@ $('.low-icon').click(function(){
 i++
 })
 
-locationlist.click(()=>{
-    
 
-selectedlocations.append(`
-<div class="bg-light">Selected-Locations
-<span style="float:right"><a href="#">[Remove all]</a></span>
-</div>
-<div>
-<span class="m-1" style="background-color:gray;">
-${locationlistlabel.val()}
-<span>
-</div>
-`)
+
+
+removeall.click(()=>{
+
+    selectedlocations.append('')
+    selectedlocations.css('display','none');    
 })
 
 
+$('body').click(()=>{
+  
+    locationlist.css('display','none');
+})
+locationlist.click((event)=>{
+    event.stopPropagation(),
+locationlist.css('display','block');
+ })
 
 
-
+ $('.low-icon').parent().click((event)=>{
+    event.stopPropagation(),
+locationlist.css('display','block');
+ })
 
 })

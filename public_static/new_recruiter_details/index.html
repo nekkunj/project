@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
     <script src="jquery.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+   
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="style.css">
@@ -190,10 +193,10 @@
 
 
 
-        <div class="row p-4 ">
+        <div class="row p-4 m-2">
             <label><span class="text-danger">*</span>Location(s) of Job:</label>
-<div class="locations-for-job">
-            <div style="width: 400px;">
+<div >
+<div class="locations-for-job" style="width: 400px;">
                <div style="border: 1px black solid">  
             <input type="text" class="srchTxt" id="inpNaukContainerDD2"   placeholder="select or start typing locations" style="width:374px;"  autocomplete="off" 
             style="color: rgb(68, 68, 68);">
@@ -207,7 +210,10 @@
         </div>
 </div>
 
-<div id="selected-locations" class="border border-secondary">
+<div id="selected-locations" class="border border-secondary m-2" style="width:400px;display: none;height: 100px;">
+    <div class="bg-light" id="selected-locations">Selected-Locations
+        <span style="float:right"><a style="cursor: pointer;" class=" text-primary"  id="remove-all">[Remove all]</a></span>
+    </div>
 
 </div>
            </div>
