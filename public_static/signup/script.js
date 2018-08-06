@@ -23,4 +23,13 @@ if(i==1){$.post('/details',{
         })
     }
 
+
+// $('.google').click(()=>{
+//     $.get('/google')
+// })
+
+
+
+
+
 })

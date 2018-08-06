@@ -126,8 +126,8 @@
         </div>
       </nav>
       <br><br><br><br>
-      <form action="/" >
-<div class="container p-0" >
+      <form  action="/" >
+<div class="container p-0 mt-3" >
 <div class="bg-light p-2" style="width: 50px;white-space: nowrap;width: 100%;border: 1.5px solid lightgray;"><b>Job Details</b>
      - Specify details of the position/job you are going to post</div>
 
@@ -217,61 +217,82 @@
 
 </div>
            </div>
-            <!-- <div style="width: 490px;float: left;"> 
-               <div class="ddwn" style="width: 76%;">
-<div  style="position: relative;z-index: 1;">
-<span class="low-icon">
-    <img class=" mr-2  "src="https://cdn1.iconfinder.com/data/icons/education-set-7/512/arrow3-down-512.png" width="10" height="10"  >
-</span>
 
-        <div style="padding: 0 25px 0 5px;"> 
-            <input type="text" class="srchTxt" id="inpNaukContainerDD2"  tnmdependent="hid_location"  autocomplete="off" 
-            style="color: rgb(68, 68, 68);">
-        </div>
-</div>
-<div class="drop" style="border-top: 0px;display: none;width: 370px;">
-    <div style="height: 300px;">
-        <ul class="ChkboxEnb">
-                <li class="pickVal" bindto="A">
-                    <a href="" data-id="location_25.9.31" class="chkd">Delhi/NCR</a>
-                </li>
-
-        </ul>
-    </div>
-</div>
-</div>
-           </div> -->
         </div>
         <div class="row p-4">
             <label>Industry:</label>
             <input type="text" id="location-auto-search" name="myCountry" placeholder="" maxlength="5" style="width: 100px;">
         </div>
         <div class="row p-4">
-            <label>Functional area:</label>
-            <input type="text" id="location-auto-search" name="myCountry" placeholder="" maxlength="5" style="width: 100px;">
+            <label>Employment Details:</label>
+            Permanent Job,Full Time
+            <span class="text-primary ml-4" id="change" style="cursor: pointer">change</span>
         </div>
-        <div class="row p-4">
+        <div class="row m-4 p-1 employment-details">
             <label>Employment type:</label>
-            <input class="m-1 " type="radio" name="Employmenttype">Permanent
-            <input class="m-1" type="radio"  name="Employmenttype">Temporary/Contractual Job
-            <input class="m-1" type="radio"  name="Employmenttype">Freelance/Home based
+            <input class="ml-2 " type="radio" name="Employmenttype" checked>Permanent
+            <input class="ml-4" type="radio"  name="Employmenttype">Temporary/Contractual Job
+            <input class="ml-4" type="radio"  name="Employmenttype">Freelance/Home based
         </div>
-        <div class="row p-4">
+        <div class="row m-4 p-1 employment-details">
             <label>Job type:</label>
-            <input class="m-1 " type="radio" name="jobtype" >Full time Job
-            <input class="m-1" type="radio"  name="jobtype">Part time Job           
+            <input class="ml-2" type="radio" name="jobtype" checked >Full time Job
+            <input class="ml-4" type="radio"  name="jobtype">Part time Job           
         </div>
     </div>
-    <button class="btn btn-primary"id="submit-button" >submit</button>
+       
+</div>
+
+
+
+<div class="container mt-3 p-0">
+    <div class="bg-light p-2 " style="width: 50px;white-space: nowrap;width: 100%;border: 1.5px solid lightgray;"><b>Advertise yourself</b>
+        - Enter information of the employer, and the owner of this job posting</div>
+
+        <div style="border:1px solid lightgray">
+            <div class="row m-4">
+                <label><span class="text-danger">*</span>Company Name</label>
+<input id="company-name" type="text" class="rounded "  style="width: 500px;" required><br>
+            </div>
+
+            <div class="row p-4">
+                <label><span class="text-danger">*</span>About Company</label>
+<textarea id="company-name" type="text" class="rounded pl-0 py-2" placeholder="Enter details about your company and/or the company you are hiring for" 
+style="width: 300px;overflow-y: auto" required></textarea><br>
+            </div>
+   <div class="row mt-4 mb-4" id="more-company" style="margin-left: 15vh;height: auto;cursor: pointer;">
+       <span style="border: 0 solid #000;background-color: lightgray;height: 14px;" id="plus-minus-image">
+            <img style="margin-bottom: 2px;" src="https://cdn3.iconfinder.com/data/icons/glypho-generic-icons/64/plus-big-512.png" height="15">
+       </span>
+
+    <b>More company details</b>-Website, Contact Person, Address and Contact Number
+    </div>    
+    
+            <div class="row pl-4 pt-2 pb-2 more-company-details">
+            <label>Company Website:</label>
+            <input  type="text" class="rounded"  style="width: 400px;" ><br>
+                </div>
+        
+                <div class="row pl-4 pt-2 pb-2 more-company-details">
+                        <label>Contact Person:</label>
+                        <input  type="text" class="rounded"  style="width: 400px;" ><br>
+                            </div>
+        
+                            <div class="row pl-4 pt-2 pb-2 more-company-details">
+                                    <label>Contact Number:</label>
+                                    <input  type="text" class="rounded"  style="width: 400px;" ><br>
+                                        </div>
+            
    
+<div class="row p-4">
+                <label>Email Id</label>
+<input id="company-name" type="text" class="rounded " style="width: 500px; " ><br>
+            </div>
+            
+        </div>
 </div>
 
-
-
-<div class="container p-0">
-    <div class="bg-light p-2 " style="width: 50px;white-space: nowrap;width: 100%;border: 1.5px solid lightgray;"><b>Desired Candidate Profile</b>
-         - Specify details of the kind of person you are looking for this job</div>
-</div>
+<button class="btn btn-primary mt-4 mb-4" id="submit-button" style=""><b>submit</b></button>
 
 </form>
 </body>

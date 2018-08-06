@@ -1,6 +1,7 @@
 let places=["Agra","Ahmedabad","Alappuzha","Alwar","Amritsar","Aurangabad","Bangalore","Bharatpur","Bhavnagar","Bikaner","Bhopal","Bhubaneshwar","BodhGaya","Calangute","Chandigarh","Chennai","Chittaurgarh","Coimbator","Cuttack","Dalhousie","Dehradun","Delhi","Diu-Island","Ernakulam","Faridabad","Gaya","Gangtok","Ghaziabad","Gurgaon","Guwahati","Gwalior","Haridwar","Hyderabad","Imphal","Indore","Jabalpur","Jaipur","Jaisalmer","Jalandhar","Jamshedpur","Jodhpur","Junagadh","Kanpur","Kanyakumari","Khajuraho","Khandala","Kochi","Kodaikanal","Kolkata","Kota","Kottayam","Kovalam","Lucknow","Ludhiana","Madurai","Manali","Mangalore","Margao","Mathura","Mountabu","Mumbai","Mussoorie","Mysore","Manali","Nagpur","Nainital","Noida","Ooty","Orchha","Panaji","Patna","Pondicherry","Porbandar","Portblair","Pune","Puri","Pushkar","Rajkot","Rameswaram","Ranchi","Sanchi","Secunderabad","Shimla","Surat","Thanjavur","Thiruchchirapalli","Thrissur","Tirumala","Udaipur","Vadodra","Varanasi","Vasco-Da-Gama","Vijayawada","Visakhapatnam"]
 let i=0;
-let j=0
+let j=0;
+let open=0;
 function showselectedlocations(jui){
  
     var value=jui.val();
@@ -34,6 +35,7 @@ let selectedlocations=$('#selected-locations')
 
 
 $(()=>{
+    var morecompanydetails=$('.more-company-details')
     var selectedlocations=$('#selected-locations')
     var minimumyear=$('#minimum-year')
     var maximumyear=$('#maximum-year')
@@ -189,5 +191,33 @@ locationlist.css('display','block');
     event.stopPropagation(),
 locationlist.css('display','block');
  })
+
+
+$('#more-company').click(()=>{
+    $('#plus-minus-image').children().css('display','none')
+    if(open%2===0){    
+$('#plus-minus-image').append(`
+<img style="margin-bottom: 2px;" src="http://icons.iconarchive.com/icons/icons8/android/512/Very-Basic-Minus-icon.png" height="15">
+`)    
+    morecompanydetails.css('display','block')
+
+}
+else{
+    
+$('#plus-minus-image').append(`
+
+<img style="margin-bottom: 2px;" src="https://cdn3.iconfinder.com/data/icons/glypho-generic-icons/64/plus-big-512.png" height="15">
+`)    
+    morecompanydetails.css('display','none')
+}
+open++
+})
+
+
+
+$('#change').click(()=>{
+    $('#change').parent().remove()
+    $('.employment-details').css('display','block')
+})
 
 })

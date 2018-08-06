@@ -227,4 +227,9 @@ padding-right: 0px;
   .locations-for-job{
       height: 30px;
   }
-  
+  .more-company-details{
+      display: none;
+  }
+  .employment-details{
+      display: none;
+  }
