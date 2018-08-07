@@ -16,27 +16,33 @@ function topFunction() {
 
 $(()=>{
     let card=$('#card')
-    var location=$('#location')
-    var topschools=$('#topschools')
-    var salary=$('#salary')
-    var education=$('#education')
-    var jobtype=$('#jobtype')
-    var morelocationdetails=$('#morelocations-details')
-    var crossicon=$('#cross-icon')
+    var location=$('.location')
+    var topschools=$('.topschools')
+    var salary=$('.salary')
+    var education=$('.education')
+    var jobtype=$('.jobtype')
+    var morelocationdetails=$('.morelocations-details')
+    var moreeducationdetails=$('.more-education-details')
+    var moreschoolsdetails=$('.more-schools-details')
+var new_filter_click=$('.new-filter-click')
+    var moresalarydetails=$('.more-salary-details')
+
+    var crossicon=$('.cross-icon')
     location.click(()=>{
-    $('#location-inside').toggle();
+    $('.location-inside').slideToggle();
     })
     topschools.click(()=>{
-        $('#topschools-inside').toggle();
+        $('.topschools-inside').slideToggle();
     })
+
     salary.click(()=>{
-        $('#salary-inside').toggle();
+        $('.salary-inside').slideToggle();
     })
   education.click(()=>{
-    $('#education-inside').toggle();
+    $('.education-inside').slideToggle();
   })
   jobtype.click(()=>{
-    $('#jobtype-inside').toggle();
+    $('.jobtype-inside').slideToggle();
   })
 
 function cards(recruiters){
@@ -88,9 +94,9 @@ function cards(recruiters){
      cards(recruiters) 
 })
 
-$('#morelocations').click(()=>{
+$('.morelocations').click(()=>{
     
-morelocationdetails.css('display','block');
+$('.morelocations-details').slideDown();
 morelocationdetails.css('z-index','1100')
 morelocationdetails.css('position','fixed')
 morelocationdetails.css('border','2px solid gray')
@@ -99,34 +105,107 @@ morelocationdetails.css('top','15%')
 morelocationdetails.css('background-color','white')
 morelocationdetails.css('width','750px')
 morelocationdetails.css('height','auto')
-
-
-
+})
+$('.more-education').click(()=>{
+$('.more-education-details').slideDown();
+moreeducationdetails.css('z-index','1100')
+moreeducationdetails.css('position','fixed')
+moreeducationdetails.css('border','2px solid gray')
+moreeducationdetails.css('left','10%')
+moreeducationdetails.css('top','15%')
+moreeducationdetails.css('background-color','white')
+moreeducationdetails.css('width','750px')
+moreeducationdetails.css('height','auto')    
 })
 
+$('.more-schools').click(()=>{
+$('.more-schools-details').slideDown();
+moreschoolsdetails.css('z-index','1100')
+moreschoolsdetails.css('position','fixed')
+moreschoolsdetails.css('border','2px solid gray')
+moreschoolsdetails.css('left','10%')
+moreschoolsdetails.css('top','15%')
+moreschoolsdetails.css('background-color','white')
+moreschoolsdetails.css('width','750px')
+moreschoolsdetails.css('height','auto')    
+})
+
+
+$('.more-salary').click(()=>{
+    moresalarydetails.slideDown();
+    moresalarydetails.css('z-index','1100')
+    moresalarydetails.css('position','fixed')
+    moresalarydetails.css('border','2px solid gray')
+    moresalarydetails.css('left','10%')
+    moresalarydetails.css('top','15%')
+    moresalarydetails.css('background-color','white')
+    moresalarydetails.css('width','750px')
+    moresalarydetails.css('height','auto')    
+    })
+    
 
  morelocationdetails.click((event)=>{
     event.stopPropagation(),
 morelocationdetails.css('display','block');
-
  })
- $('#morelocations').click((event)=>{    
+ 
+ $('.morelocations').click((event)=>{    
     event.stopPropagation(),
 morelocationdetails.css('display','block');
 
  })
 
 $('body').click(()=>{
-    console.log(' world'),
-    morelocationdetails.css('display','none');
+    morelocationdetails.css('display','none'),
+    moreeducationdetails.css('display','none')
+    moresalarydetails.css('display','none');
+    moreschoolsdetails.css('display','none');
 })
 
 crossicon.click((event)=>{    
     event.stopPropagation(),
-morelocationdetails.css('display','none');
+morelocationdetails.css('display','none'),
+moreeducationdetails.css('display','none');
+moresalarydetails.css('display','none');
+moreschoolsdetails.css('display','none');
  })
 
- 
+// edadawd
+
+moreeducationdetails.click((event)=>{
+    event.stopPropagation(),
+moreeducationdetails.css('display','block');
+ })
+
+ $('.more-education').click((event)=>{    
+    event.stopPropagation(),
+moreeducationdetails.css('display','block');
+ })
+
+ moresalarydetails.click((event)=>{
+    event.stopPropagation(),
+moresalarydetails.css('display','block');
+ })
+
+ $('.more-salary').click((event)=>{    
+    event.stopPropagation(),
+moresalarydetails.css('display','block');
+ })
+
+ moreschoolsdetails.click((event)=>{
+    event.stopPropagation(),
+moreschoolsdetails.css('display','block');
+ })
+
+ $('.more-schools').click((event)=>{    
+    event.stopPropagation(),
+moreschoolsdetails.css('display','block');
+ })
+
+new_filter_click.click(()=>{
+    $('.new-filter-details').slideToggle()
+
+})
 
 })
 

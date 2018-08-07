@@ -58,6 +58,9 @@ opacity: 0.9;
     
     
 }
+body{
+    font: normal 13px Arial, Helvetica, sans-serif;
+  }
 .search-box{
     z-index: 10;
     position: absolute;
@@ -81,7 +84,8 @@ opacity: 0.9;
     white-space: nowrap;
 margin-left:10%;
 }
-#jobtype-inside,#education-inside,#salary-inside,#topschool-inside,#location-inside{
+
+.jobtype-inside,.education-inside,.salary-inside,.topschools-inside,.location-inside{
     display:none;
 }
 #recent-searches{
@@ -106,7 +110,7 @@ margin-left:10%;
     transition: all 0.7s ease-in-out; 
     height: 50px;
     line-height: 18px;
-    padding: 0 2px 0 2px;
+    padding: 0 2px 0 2px; 
     border-radius:1px;
 }
 .search:hover input, .search input:focus {
@@ -195,12 +199,20 @@ border: 1px solid white;
   }
   @media(max-width:1000px){
       .filter{
-          display: none;
-      }}
+          display: none;}
+        .new-filter{
+            display: block;
+            cursor: pointer;
+        }}
+   
+  @media(min-width:1000px){
+.new-filter{
+    display: none;
+}  
+}
       @media(max-width:1200px){
       #recent-searches{
-          display: none;
-        
+          display: none;        
       }
   }
   .drop ul.ChkboxEnb li a.chkd{
@@ -210,7 +222,7 @@ border: 1px solid white;
 label{
     cursor: pointer;
 }
-#cross-icon{
+.cross-icon{
 float: right;
 border:gray 1px solid;
 width: 30px;
@@ -218,7 +230,11 @@ border-radius: 50%;
 color: gray;
 cursor: pointer;
 }
-#morelocations-details label{
-    width: 200px;
+.morelocations-details label,.more-education-details label,.more-salary-details label,.more-schools-details label{
+    font-size: 14.5px;
+    width: 210px;
     margin-right: 120px;
+}
+.new-filter-details{
+    display: none;
 }
