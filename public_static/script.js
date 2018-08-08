@@ -201,7 +201,7 @@ moreschoolsdetails.css('display','block');
     event.stopPropagation(),
 moreschoolsdetails.css('display','block');
  })
-
+ 
 new_filter_click.click(()=>{
     $('.new-filter-details').slideToggle()
 
