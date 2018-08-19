@@ -177,17 +177,17 @@ border: 1px solid white;
   body{
     font: normal 13px Arial, Helvetica, sans-serif;
   }
-  .low-icon{
+  .low-icon-location,.low-icon-ug,.low-icon-pg{
     background-color: #C9D8FC;
    cursor: pointer; 
    float: right;
    height: 100%;
    width: 24px;
    margin: 0px;
-   
    padding: 2px;
    padding-bottom: 4px;
   }
+  
   .ddsearch{
     border: 1px solid #ccc;
     background: #fff;
@@ -206,7 +206,7 @@ border: 1px solid white;
     padding: 5px 0;
     margin: 0;
   }
-  #location-list{
+  #location-list,#ug-list,#pg-list{
       
       overflow-y:auto;
       overflow-x:hidden; 
@@ -214,17 +214,19 @@ border: 1px solid white;
       height: 400px;
       background-color: white;
       border: 1px solid lightgray;
+      box-shadow: lightgray 4px 4px 2px;
 padding-right: 0px;            
   }
-  #location-list label{
+
+  #location-list label,#ug-list label,#pg-list label{
       width: 100%;
       text-align: left;
       border-bottom: 1px solid lightgray;
-      margin: 0px;
+      margin-right: 10px;
       padding: 2px;
   }
   
-  .locations-for-job{
+  .locations-for-job,.ug-for-job,.pg-for-job{
       height: 30px;
   }
   .more-company-details{
@@ -233,3 +235,9 @@ padding-right: 0px;
   .employment-details{
       display: none;
   }
+
+  .description-decoration span:hover {
+      background-color: rgb(84, 179, 209);
+      cursor: pointer;
+  }
+  

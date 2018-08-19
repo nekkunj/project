@@ -16,17 +16,17 @@ if(password.val()!=retypepassword.val()){
 })
  
 
-if(i==1){$.post('/details',{
+$.post('/details',{
     username:username.val(),
     email:email.val(),
     password:password.val()
         })
-    }
+    
 
 
-// $('.google').click(()=>{
-//     $.get('/google')
-// })
+    $('.google').click(()=>{
+        $.get('/google')
+    })
 
 
 

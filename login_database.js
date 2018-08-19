@@ -43,10 +43,75 @@ function adduserdetails(username,email,password)
     })
 }
 
+function gettitle () {
 
+    return new Promise(function (resolve, reject) {
+        connection.query(
+            `SELECT * FROM title`,
+            function(err, rows, cols) {
+                if (err) {
+                    reject(err)
+                } else {
+                    resolve(rows)
+                }
+            }
+        )
+    })
+}
+
+
+function addtitle(Job_Title){
+
+    
+    
+    return new Promise((resolve, reject)=>{
+    
+        connection.query(
+            `DELETE FROM title 
+             `,
+            function(err, rows, cols) {
+                if (err) {
+                    reject(err)
+                } else {
+                    resolve()
+                }
+            }
+        )
+    
+        connection.query(
+            `INSERT INTO title (Job_Title) 
+            VALUES (?)`,
+            [Job_Title],
+            function(err,rows,cols) {
+                if (err) {
+                    reject(err)
+                } else {                    
+                    resolve()
+                }
+            }
+        )
+    });
+
+
+}
+// function deletetitle(){
+//     return new Promise(function (resolve, reject) {
+//         connection.query(
+//             `DELETE FROM title 
+//              `,
+//             function(err, rows, cols) {
+//                 if (err) {
+//                     reject(err)
+//                 } else {
+//                     resolve()
+//                 }
+//             }
+//         )
+//     })
+// }
 
 
 exports=module.exports={
-    adduserdetails,getuserdetails
+    adduserdetails,getuserdetails,gettitle,addtitle
 }
 

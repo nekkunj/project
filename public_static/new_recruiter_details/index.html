@@ -5,15 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
-    <script src="jquery.js"></script>
+    <link rel="stylesheet" href="chosen.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-   
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="style.css">
-<script src="jquery.js"></script>
+
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="script.js"></script>
 </head>
 <body>
@@ -140,15 +142,25 @@
 
     <div class="row p-4">
         <label>Job Description:</label>
+        <div>
+        <div class=" pt-1 description-decoration" style="height:25px;background-color: rgb(210,236,248);">
+            <span class="pt-1 pb-1"><img src="https://png.icons8.com/metro/1600/bold.png" width="18"></span>
+            <span class="pt-1 pb-1"><img src="https://png.icons8.com/metro/1600/underline.png" width="22"></span>
+            <span class="pt-1 pb-1"><img src="https://png.icons8.com/metro/1600/italic.png" width="18"></span>
+            <span class="pt-1 pb-1"><img src="https://png.icons8.com/ios/1600/bulleted-list.png" width="18"></span>
+            <span class="pt-1 pb-1"><img src="http://cdn.onlinewebfonts.com/svg/img_95568.png" width="18"></span>
+
+        </div>
 
         <textarea id="job-description"name="Text1" cols="60" style="height: 150px;" required></textarea>
     </div>
+</div>
 
     <div class="row p-4">
         
         <label><span class="text-danger">*</span>Keywords:</label>
 
-        <input id="keywords" type="text" maxlength="100" style="width: 300px;">
+        <input id="keywords" type="search" maxlength="100" style="width: 300px;">
         Max 100 characters
     </div>
 
@@ -184,7 +196,7 @@
 
         <div class="row p-4">
             <label>Other Salary Details:</label>
-            <input type="text"  style="width: 500px;">
+            <input type="text" id="more-salary-details" style="width: 500px;">
         </div>
         <div class="row p-4">
             <label>Number of Vacancies:</label>
@@ -200,7 +212,7 @@
                <div style="border: 1px black solid">  
             <input type="text" class="srchTxt" id="inpNaukContainerDD2"   placeholder="select or start typing locations" style="width:374px;"  autocomplete="off" 
             style="color: rgb(68, 68, 68);">
-            <span class="low-icon" >
+            <span class="low-icon-location" >
                 <img class=" ml-1  "src="https://cdn1.iconfinder.com/data/icons/education-set-7/512/arrow3-down-512.png" width="10" height="10"  >
             </span>
 
@@ -212,7 +224,7 @@
 
 <div id="selected-locations" class="border border-secondary m-2" style="width:400px;display: none;height: 100px;">
     <div class="bg-light" id="selected-locations">Selected-Locations
-        <span style="float:right"><a style="cursor: pointer;" class=" text-primary"  id="remove-all">[Remove all]</a></span>
+        <span style="float:right"><a style="cursor: pointer;" class=" text-primary"  id="remove-all-location">[Remove all]</a></span>
     </div>
 
 </div>
@@ -221,29 +233,99 @@
         </div>
         <div class="row p-4">
             <label>Industry:</label>
-            <input type="text" id="location-auto-search" name="myCountry" placeholder="" maxlength="5" style="width: 100px;">
+            <input type="text"  id="industry" placeholder="" maxlength="200" style="width: 200px;">
+           
         </div>
+
+        <div class="row p-4">
+            <label>Role:</label>
+            <input type="text"  id="role" placeholder="" maxlength="200" style="width: 200px;">
+           
+        </div>
+        <div class="row p-4">
+            <label>Functional Area:</label>
+            <input type="text"  id="functional-area" placeholder="" maxlength="200" style="width: 200px;">
+        </div>
+
         <div class="row p-4">
             <label>Employment Details:</label>
             Permanent Job,Full Time
             <span class="text-primary ml-4" id="change" style="cursor: pointer">change</span>
         </div>
-        <div class="row m-4 p-1 employment-details">
+        <div class="row m-4 p-1 employment-details employment-details-one">
             <label>Employment type:</label>
-            <input class="ml-2 " type="radio" name="Employmenttype" checked>Permanent
-            <input class="ml-4" type="radio"  name="Employmenttype">Temporary/Contractual Job
-            <input class="ml-4" type="radio"  name="Employmenttype">Freelance/Home based
+            <input class="ml-2 " type="radio"  name="Employmenttype" value="Permanent" checked>Permanent
+            <input class="ml-4" type="radio"   id="lkjh" name="Employmenttype" value="Temporary/Contractual">Temporary/Contractual Job
+            <input class="ml-4" type="radio"   name="Employmenttype" value="Freelance/Home based" >Freelance/Home based
         </div>
-        <div class="row m-4 p-1 employment-details">
+        <div class="row m-4 p-1 employment-details employment-details-two">
             <label>Job type:</label>
-            <input class="ml-2" type="radio" name="jobtype" checked >Full time Job
-            <input class="ml-4" type="radio"  name="jobtype">Part time Job           
+            <input class="ml-2" type="radio" name="jobtype" checked value="Full time" >Full time Job
+            <input class="ml-4" type="radio"  name="jobtype" value="Part time">Part time Job           
         </div>
     </div>
        
 </div>
 
+<div class="container mt-3 p-0">
+    <div class="bg-light p-2 " style="width: 50px;white-space: nowrap;width: 100%;border: 1.5px solid lightgray;"><b>Desired Candidate Profile</b>
+        - Specify details of the kind of person you are looking for this job</div>
+        <div style="border:1px solid lightgray">
+            <div class="row p-4 m-2">
+                <label><span class="text-danger">*</span>Specify UG Qualifications:</label>
+            <div>
+            <div class="ug-for-job" style="width: 400px;">
+                <div style="border: 1px black solid">  
+             <input type="text" class="srchTxt"    placeholder="Select UG Qualificatiions" style="width:374px;"  autocomplete="off" 
+             style="color: rgb(68, 68, 68);">
+             <span class="low-icon-ug" style="border-bottom: green 1px solid;" >
+                 <img class=" ml-1  "src="https://cdn1.iconfinder.com/data/icons/education-set-7/512/arrow3-down-512.png" width="10" height="10"  >
+             </span>
+             
+         </div>
+                  <div id="ug-list" style="display: none;">
+         </div>
+         
+         </div>
+         <div id="selected-ug" class="border border-secondary m-2" style="width:400px;display: none;height: auto;">
+            <div class="bg-light" id="selected-ug">Selected Qualificatiions
+                <span style="float:right"><a style="cursor: pointer;" class=" text-primary"  id="remove-all-ug">[Remove all]</a></span>
+            </div>
+        
+        </div>
 
+ 
+        </div>
+    </div>
+
+    <div class="row p-4 m-2">
+        <label><span class="text-danger">*</span>Specify PG Qualifications:</label>
+    <div>
+    <div class="pg-for-job" style="width: 400px;">
+        <div style="border: 1px black solid">  
+     <input type="text" class="srchTxt"    placeholder="Select PG Qualificatiions" style="width:374px;"  autocomplete="off" 
+     style="color: rgb(68, 68, 68);">
+     <span class="low-icon-pg" style="border-bottom: green 1px solid;" >
+         <img class=" ml-1  "src="https://cdn1.iconfinder.com/data/icons/education-set-7/512/arrow3-down-512.png" width="10" height="10"  >
+     </span>
+     
+ </div>
+          <div id="pg-list" style="display: none;">
+ </div>
+ 
+ </div>
+ <div id="selected-pg" class="border border-secondary m-2" style="width:400px;display: none;height: auto;">
+    <div class="bg-light" id="selected-pg">Selected PG Qualificatiions
+        <span style="float:right"><a style="cursor: pointer;" class=" text-primary"  id="remove-all-pg">[Remove all]</a></span>
+    </div>
+
+</div>
+
+
+</div>
+</div>
+    </div>
+    </div>
 
 <div class="container mt-3 p-0">
     <div class="bg-light p-2 " style="width: 50px;white-space: nowrap;width: 100%;border: 1.5px solid lightgray;"><b>Advertise yourself</b>
@@ -257,7 +339,7 @@
 
             <div class="row p-4">
                 <label><span class="text-danger">*</span>About Company</label>
-<textarea id="company-name" type="text" class="rounded pl-0 py-2" placeholder="Enter details about your company and/or the company you are hiring for" 
+<textarea id="company-details" type="text" class="rounded pl-0 py-2" placeholder="Enter details about your company and/or the company you are hiring for" 
 style="width: 300px;overflow-y: auto" required></textarea><br>
             </div>
    <div class="row mt-4 mb-4" id="more-company" style="margin-left: 15vh;height: auto;cursor: pointer;">
@@ -270,27 +352,31 @@ style="width: 300px;overflow-y: auto" required></textarea><br>
     
             <div class="row pl-4 pt-2 pb-2 more-company-details">
             <label>Company Website:</label>
-            <input  type="text" class="rounded"  style="width: 400px;" ><br>
+            <input  type="text" class="rounded" id="website" style="width: 400px;" ><br>
                 </div>
         
                 <div class="row pl-4 pt-2 pb-2 more-company-details">
                         <label>Contact Person:</label>
-                        <input  type="text" class="rounded"  style="width: 400px;" ><br>
+                        <input  type="text" class="rounded" id="recruiter-name" style="width: 400px;" ><br>
                             </div>
         
                             <div class="row pl-4 pt-2 pb-2 more-company-details">
                                     <label>Contact Number:</label>
-                                    <input  type="text" class="rounded"  style="width: 400px;" ><br>
+                                    <input  type="text" class="rounded" id="telephone" style="width: 400px;" ><br>
                                         </div>
-            
+                                        <div class="row pl-4 pt-2 pb-2 more-company-details" id="address">
+                                            <label>Address:</label>
+                                            <input  type="text" class="rounded"  style="width: 400px;" ><br>
+                                                </div>
    
 <div class="row p-4">
                 <label>Email Id</label>
-<input id="company-name" type="text" class="rounded " style="width: 500px; " ><br>
+<input id="email-id" type="text" class="rounded " style="width: 500px; " ><br>
             </div>
             
         </div>
 </div>
+
 
 <button class="btn btn-primary mt-4 mb-4" id="submit-button" style=""><b>submit</b></button>
 

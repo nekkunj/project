@@ -7,17 +7,20 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Teacherjobs.com</title>
     <script src="jquery.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
 <script src="script.js"></script>
 </head>
 <body>
     
 
     <nav class="navbar navbar-expand-lg  navbar-dark  fixed-top " style="background-color: rgba(247, 238, 238,1)">
-            <a href="https://www.naukri.com/"><img class="navbar-brand ml-5" id="brand" src="Untitled.png" alt="logo">
+            <a href="https://www.naukri.com/"><img class="navbar-brand " style="margin-left: 3%" id="brand" src="Untitled.png" alt="logo">
             </a>    
         <button class="navbar-toggler bg-dark " type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon " ></span>
@@ -27,10 +30,10 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                     
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
-                  <a class="nav-link text-dark" href="#">Home <span class="sr-only">(current)</span></a>
+                <li class="nav-item nav-item-home" >
+                  <a class="nav-link text-dark" href="#">Home </a>
                 </li>
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown nav-item-jobs">
                   <a class="nav-link text-dark dropdown-toggle  " href="#"  id="navbardrop" data-toggle="dropdown">Jobs</a>
                   <div class="dropdown-menu pt-0 pb-0">
                     
@@ -81,7 +84,7 @@
 
             
                 
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown nav-item-advice">
                   <a class="nav-link text-dark dropdown-toggle" href="#" data-toggle="dropdown">Carrer advice</a>
                   <div class="dropdown-menu p-0">
                       <div style="background-color:#343a40">
@@ -99,7 +102,7 @@
               </ul>
               
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown nav-item-employe">
                         <a class="nav-link text-dark dropdown-toggle" href="#" data-toggle="dropdown">For Employers</a>
                         <div class="dropdown-menu p-0">
                                 <div style="background-color: #343a40;display: flex;">
@@ -124,7 +127,7 @@
           </nav>
           <button class="btn btn-info"onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
-    <div id="demo" class="carousel slide " style="margin-top: 55px;" data-ride="carousel">
+    <div id="demo" class="carousel slide  carou-move" style="margin-top: 55px;" data-ride="carousel">
 
             <!-- Indicators -->
             <ul class="carousel-indicators">
@@ -155,8 +158,7 @@
                     <!-- The slideshow -->
             <div class="carousel-inner">
               <div class="carousel-item active bg-secondary">
-                <img class=" slideshow pl-6" src="http://canarylearning.com/wp-content/uploads/2016/02/Feeling-aloneSmall.jpg" alt="Los Angeles">
-                
+                <img class=" slideshow pl-6" src="https://www.timeshighereducation.com/sites/default/files/styles/the_breaking_news_image_style/public/Pictures/Pictures/620xany/5/1/6/27516_student-teachers-being-taught-in-classroom.jpg?itok=r-uiwLAX" alt="Los Angeles">                
             </div>
               <div class="carousel-item bg-secondary">
                 <img class="slideshow pl-6" src="http://media2.intoday.in/indiatoday/images/stories/2015October/aspire-news-1_102915052918.jpg" alt="Chicago">
@@ -188,11 +190,11 @@
 
           
           <!-- card 1 -->
-      <span style="display: flex;">
+      <span style="display: flex;" id="maain-span">
 
           <div  class=" data  container-fluid  "  id="card" style="margin-top: -50px;z-index: 10;">
 
-                <div class="new-filter border-secondary border bg-light asdf row m-3" style="z-index: 100;width: 42rem;">
+                <div class="new-filter border-secondary border bg-light asdf row m-3" style="z-index: 100;">
 
 
                         <div class=" pt-1 pl-3 pb-3 new-filter-click " style="text-align: center;height: 30px;border-radius: 50%;" >
@@ -273,96 +275,13 @@
                             </div>
                     </div>
                     </div>    
-            <div class="suggested-results other-details row border asdf ml-3">50 suggesteded Results  </div>
-            <!-- <div class="new-filter" >gjbjhjbj</div> -->
+            <div class="suggested-results other-details container row  asdf ml-1">50 suggesteded Results  </div>
+           
 
-
-            <!-- <div class="new-filter border-secondary border bg-light asdf row m-3" style="z-index: 100;width: 42rem;">
-
-
-                    <div class=" pt-1 pl-3 pb-3 new-filter-click " style="text-align: center;height: 30px;border-radius: 50%;" >
-                        <img class=" mr-3  "src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIcRmu6Md-YfAATIVIT9shv6__28-G86toFGRSq0PYTVT35Zn1" width="40" height="40"  >
-                <b  style="font-size: 20px;width: 100%;text-align: center"><i >Filter</i></b>
-                    </div><br>
-                <div class="new-filter-details" style="border-top:white 15px solid;padding:10px;border-bottom:white 15px solid">
-                    Refine results<br><br>Freshness<br>
-                    <select>
-                        <option value="">Last 30 days</option>
-                        <option>Last 15 days</option>
-                        <option>Last 7 days</option>
-                        <option>Last 3 days</option>
-                        <option>Last 1 days</option>
-                    </select>
-                </div>
-                <div style="width:100%;" class="new-filter-details" id="location" class="mr-0  filter-on-click"><a class='btn-light btn ' style="width:100%;text-align: left;">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdxBGhE3sABqTG4g6Ddrmx-HwQoUor0ygvP-6H-YD3uQfZvzzY" height="12">
-                    Location</a>
-                </div>
-                    <div id="location-inside">    
-                        <label><input type="checkbox" >Delhi</label><br>
-                        <label><input type="checkbox">Delhi NCR</label><br>
-                        <label><input type="checkbox">Gurgaon</label><br>
-                        <label><input type="checkbox">Bengaluru</label><br>
-                        <label id="morelocations"  style="color: blue;">more</label>
-                
-                </div>
-                
-                
-                <div class="new-filter-details" style="width:100%;" id="topschools" class="mr-0 filter-on-click"><a class='btn-light btn' style="width:100%;text-align: left;">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdxBGhE3sABqTG4g6Ddrmx-HwQoUor0ygvP-6H-YD3uQfZvzzY" height="12">
-                Top Companies</a>
-                </div>
-                    <div id="topschools-inside">
-                        <label><input type="checkbox" >Amity University</label><br>
-                        <label><input type="checkbox">Genpact</label><br>
-                        <label><input type="checkbox">Amazon Development Centre </label><br>
-                        <label><input type="checkbox">Modern Vidya Niketan</label><br>
-                        <label><input type="checkbox">NIIT</label><br>
-                        <label id="more-schools"  style="color: blue;">more</label>
-                            </div>
-                
-                <div style="width:100%;" class="new-filter-details" id="salary" class="mr-0 filter-on-click"><a class='btn-light btn' style="width:100%;text-align: left;">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdxBGhE3sABqTG4g6Ddrmx-HwQoUor0ygvP-6H-YD3uQfZvzzY" height="12">
-                Salary</a>
-                </div>
-                <div id="salary-inside">
-                <label><input type="checkbox">0-3 Lakhs</label><br>
-                <label><input type="checkbox">3-6 Lakhs</label><br>
-                <label><input type="checkbox">6-10 Lakhs</label><br>
-                <label><input type="checkbox">10-15 Lakhs</label><br>
-                <label><input type="checkbox">15-25 Lakhs</label><br>
-                <label id="more-salary"  style="color: blue;">more</label>
-                
-                </div>
-                
-                <div style="width:100%;" class="new-filter-details" id="education" class="mr-0 filter-on-click"><a class='btn-light btn' style="width:100%;text-align: left;">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdxBGhE3sABqTG4g6Ddrmx-HwQoUor0ygvP-6H-YD3uQfZvzzY" height="12">
-                Education</a>
-                <div  id="education-inside">
-                    <label><input type="checkbox">Any Graduate</label><br>
-                        <label><input type="checkbox">B.Ed</label><br>
-                            <label><input type="checkbox">B.A</label><br>
-                                <label><input type="checkbox">M.Com</label><br>
-                                    <label><input type="checkbox">Any Postgraduate</label><br>
-                <label id="more-education"  style="color: blue;">more</label>
-                
-                        </div>
-                </div>
-                <div style="width:100%;" class="new-filter-details" id="jobtype" class="mr-0 filter-on-click"><a class='btn-light btn' style="width:100%;text-align: left;">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdxBGhE3sABqTG4g6Ddrmx-HwQoUor0ygvP-6H-YD3uQfZvzzY" height="12">
-                Job Type</a>
-                <div  id="jobtype-inside">
-                        <input type="checkbox">All Jobs<br>
-                        <input type="checkbox">PSU/Government<br>
-                        <input type="checkbox">Walk-in<br>
-                        </div>
-                </div>
-                </div>   -->
-
-          <div  class=" row border  m-3 p-0    asdf" style="width:42rem;">
+          <div  class=" row  container  mt-3 ml-1 p-0    asdf" style="overflow: hidden;">
 <a title="Walk in Interviews for PTI Teachers in Alpine Convent School"class=" anchor1 link p-1"  href="description 7/index.html"
 class="content active " style="width: 100%" target="_blank">
-<div style="text-align: center">
+<div style="text-align: center " class="anchor-title">
     Walk in Interviews for PTI 
     <b>Teachers</b>
     in Alpine Convent School
@@ -370,11 +289,12 @@ class="content active " style="width: 100%" target="_blank">
 <span class="bk-warning rupees" >
     
     </span>
-    
+    <div class="salary-and-experience p-2">
     <span class="pl-5 text-dark" >
 <img class="mb-1" src="https://png.icons8.com/windows/1600/rupee.png" width="18" >  3,00,000-5,00,000 P.A
 </span>
 <span class="pl-5 text-dark"><img src="http://cdn.onlinewebfonts.com/svg/img_356662.png" class="mb-1 mr-1" width="14.5"> 0-2 yrs</span>
+</div>
 <div class="more p-2 text-dark">
     <span class='mb-1' style="display: flex; ">
     <div><em>Keyskills:</em></div>
@@ -388,18 +308,15 @@ class="content active " style="width: 100%" target="_blank">
 </div>
 </a>
 <span class="other-details p-2" style="width: 100%;">
-    Current-Status:Available<img src="https://cdn1.iconfinder.com/data/icons/soft-toolbar-icons/512/check_apply_approved-512.png" width="15" class="ml-2 mb-1">
+   <label class="current-status-available"> Current-Status:Available</label><img src="https://cdn1.iconfinder.com/data/icons/soft-toolbar-icons/512/check_apply_approved-512.png" width="15" class="ml-2 mb-1">
 <span style="float: right ;"><em>Posted by:</em> 
     <img src="https://imageog.flaticon.com/icons/png/512/3/3657.png?size=1200x630f&pad=10,10,10,10&ext=png&bg=FFFFFFFF" width="25" class="mb-1">
     D k Sharma</span>
 </span>
 </div>  
-
-
-<!-- card 2 -->
-<div  class=" row border p-0 m-3 asdf" style="width:42rem;">
+<div  class=" row  container p-0  mt-3 ml-1 asdf" style="overflow: hidden;">
         <a title="Walk in Interviews for PTI Teachers in Alpine Convent School"class=" anchor1 link p-1"  href="description 2/index.html"      class="content active " style="width: 100%" target="_blank">
-        <div style="text-align: center">
+        <div style="text-align: center" class="anchor-title">
             Primary
             <b>School Teacher</b>
             in KP EDUCATIONAL ACADEMY
@@ -407,11 +324,12 @@ class="content active " style="width: 100%" target="_blank">
         <span class="bk-warning rupees" >
             <!-- <em></em>  -->
             </span>
-            
+            <div class="salary-and-experience p-2">    
             <span class="pl-5 text-dark" >
                 <img class="mb-1" src="https://png.icons8.com/windows/1600/rupee.png" width="18" >  Not disclosed
         </span>
         <span class="pl-5 text-dark"><img src="http://cdn.onlinewebfonts.com/svg/img_356662.png" class="mb-1 mr-1" width="14.5"> 1-6 yrs</span>
+        </div>
         <div class="more text-dark p-2">
             <span class='mb-1' style="display: flex; ">
             <div><em>Keyskills:</em></div>
@@ -426,26 +344,27 @@ class="content active " style="width: 100%" target="_blank">
         </div>
         </a>
         <span class="other-details p-2" style="width: 100%">
-            Current-Status:Available<img src="https://cdn1.iconfinder.com/data/icons/soft-toolbar-icons/512/check_apply_approved-512.png" width="15" class="ml-2 mb-1">
+            <label class="current-status-available"> Current-Status:Available</label><img src="https://cdn1.iconfinder.com/data/icons/soft-toolbar-icons/512/check_apply_approved-512.png" width="15" class="ml-2 mb-1">
         <span style="float: right ;"><em>Posted by:</em>
                 <img src="https://imageog.flaticon.com/icons/png/512/3/3657.png?size=1200x630f&pad=10,10,10,10&ext=png&bg=FFFFFFFF" width="25" class="mb-1">
             P Kiran Kumar</span>
         </span>
 </div>
-<div  class=" row border  p-0 m-3 asdf" style="width:42rem;">
-                <a title="Walk in Interviews for PTI Teachers in Alpine Convent School"class=" anchor1 link p-1"  href="/description 3/index.html"
+<div  class=" row  container p-0  mt-3 ml-1 asdf" style="overflow: hidden;">
+                <a title="Walk in Interviews for PTI Teachers in Alpine Convent School" class=" anchor1 link p-1"  href="/description 3/index.html"
                 class="content active " style="width: 100%" target="blank">
-                <div style="text-align: center">
+                <div style="text-align: center" class="anchor-title">
                         <b>Teachers</b> (All Subjects) for Reputed <b>Schools</b> | Dharmapuri, Salem
                 </div>
                 <span class="bk-warning rupees" >
                     <!-- <em></em>  -->
                     </span>
-                    
+                    <div class="salary-and-experience p-2">
                     <span class="pl-5 text-dark" >
                         <img class="mb-1" src="https://png.icons8.com/windows/1600/rupee.png" width="18" >  1,00,000 - 6,00,000 P.A. Food & Acc...
                 </span>
                 <span class="pl-5 text-dark"><img src="http://cdn.onlinewebfonts.com/svg/img_356662.png" class="mb-1 mr-1" width="14.5"> 0-5 yrs</span>
+               </div>
                 <div class="more text-dark p-2">
                     <span class='mb-1' style="display: flex; ">
                     <div><em>Keyskills:</em></div>
@@ -459,26 +378,27 @@ class="content active " style="width: 100%" target="_blank">
                 </div>
                 </a>
                 <span class="other-details p-2" style="width: 100%">
-                    Current-Status:Available<img src="https://cdn1.iconfinder.com/data/icons/soft-toolbar-icons/512/check_apply_approved-512.png" width="15" class="ml-2 mb-1">
+                    <label class="current-status-available"> Current-Status:Available</label><img src="https://cdn1.iconfinder.com/data/icons/soft-toolbar-icons/512/check_apply_approved-512.png" width="15" class="ml-2 mb-1">
                 <span style="float: right ;"><em>Posted by:</em>
                         <img src="https://imageog.flaticon.com/icons/png/512/3/3657.png?size=1200x630f&pad=10,10,10,10&ext=png&bg=FFFFFFFF" width="25" class="mb-1">
                     HR - Priyadharshini</span>
                 </span>
 </div>
-<div  class=" row border  p-0 m-3 asdf" style="width:42rem;">
+<div  class=" row  container p-0  mt-3 ml-1 asdf" style="overflow: hidden;">
                         <a title="Walk in Interviews for PTI Teachers in Alpine Convent School"class=" anchor1 link p-1"  href="description 1/index.html"
                         class="content active " style="width: 100%" target="_blank">
-                        <div style="text-align: center">
+                        <div style="text-align: center" class="anchor-title">
                             Content Developer - Maths & Science ( K-10 )
                         </div>
                         <span class="bk-warning rupees" >
                             <!-- <em></em>  -->
                             </span>
-                            
+                            <div class="salary-and-experience p-2">
                             <span class="pl-5 text-dark" >
                                 <img class="mb-1" src="https://png.icons8.com/windows/1600/rupee.png" width="18" >  4,50,000-6,00,000 P.A
                         </span>
                         <span class="pl-5 text-dark"><img src="http://cdn.onlinewebfonts.com/svg/img_356662.png" class="mb-1 mr-1" width="14.5"> 1-3 yrs</span>
+                       </div>
                         <div class="more p-2 text-dark">
                             <span class='mb-1' style="display: flex; ">
                             <div><em>Keyskills:</em></div>
@@ -492,26 +412,27 @@ class="content active " style="width: 100%" target="_blank">
                         </div>
                         </a>
                         <span class="other-details p-2" style="width: 100%">
-                            Current-Status:Available<img src="https://cdn1.iconfinder.com/data/icons/soft-toolbar-icons/512/check_apply_approved-512.png" width="15" class="ml-2 mb-1">
+                            <label class="current-status-available"> Current-Status:Available</label><img src="https://cdn1.iconfinder.com/data/icons/soft-toolbar-icons/512/check_apply_approved-512.png" width="15" class="ml-2 mb-1">
                         <span style="float: right ;"><em>Posted by:</em>
                                 <img src="https://imageog.flaticon.com/icons/png/512/3/3657.png?size=1200x630f&pad=10,10,10,10&ext=png&bg=FFFFFFFF" width="25" class="mb-1">
                             Kumar Vivek</span>
                         </span>
 </div>
-<div  class=" row border  p-0 m-3 asdf" style="width:42rem;">
+<div  class=" row  container p-0  mt-3 ml-1 asdf" style="overflow: hidden; ">
                                 <a title="Walk in Interviews for PTI Teachers in Alpine Convent School"class=" anchor1 link p-1"  href="/description 4/index.html"
                                 class="content active " style="width: 100%" target="_blank">
-                                <div style="text-align: center">
+                                <div style="text-align: center" class="anchor-title">
                                         Hiring PGT <b>Teachers</b> for Renowned <b>CBSE</b> School II Lakhimpur (u.p)
                                 </div>
                                 <span class="bk-warning rupees" >
                                 
                                     </span>
-                                    
+                                    <div class="salary-and-experience p-2">
                                     <span class="pl-5 text-dark" >
                                         <img class="mb-1" src="https://png.icons8.com/windows/1600/rupee.png" width="18" >   INR 1,25,000 - 5,50,000 P.A.
                                 </span>
                                 <span class="pl-5 text-dark"><img src="http://cdn.onlinewebfonts.com/svg/img_356662.png" class="mb-1 mr-1" width="14.5"> 2-7 yrs</span>
+                               </div>
                                 <div class="more p-2 text-dark">
                                     <span class='mb-1' style="display: flex; "> 
                                     <div><em>Keyskills:</em></div>
@@ -526,23 +447,24 @@ class="content active " style="width: 100%" target="_blank">
                                 </div>
                                 </a>
                                 <span class="other-details p-2" style="width: 100%">
-                                    Current-Status:Available<img src="https://cdn1.iconfinder.com/data/icons/soft-toolbar-icons/512/check_apply_approved-512.png" width="15" class="ml-2 mb-1">
+                                    <label class="current-status-available"> Current-Status:Available</label><img src="https://cdn1.iconfinder.com/data/icons/soft-toolbar-icons/512/check_apply_approved-512.png" width="15" class="ml-2 mb-1">
                                 <span style="float: right ;"><em>Posted by:</em>
                                         <img src="https://imageog.flaticon.com/icons/png/512/3/3657.png?size=1200x630f&pad=10,10,10,10&ext=png&bg=FFFFFFFF" width="25" class="mb-1">
                                     Amit Gupta</span>
                                 </span>
 </div>
-<div  class=" row border container p-0 m-3 asdf" style="width:42rem;">
+<div  class=" row  container p-0  mt-3 ml-1 asdf" style="overflow: hidden; ">
                                         <a title="Walk in Interviews for PTI Teachers in Alpine Convent School"class=" anchor1 link p-1"  href="/description 5/index.html"
                                         class="content active " style="width: 100%" target="_blank">
-                                        <div style="text-align: center">
+                                        <div style="text-align: center" class="anchor-title">
                                                 Hiring <b>Teachers</b> II Reputed CBSE <b>School</b> II Greater Noida
                                         </div>
-                                            
+                                          <div class="salary-and-experience p-2">  
                                             <span class="pl-5 text-dark" >
                                                 <img class="mb-1" src="https://png.icons8.com/windows/1600/rupee.png" width="18" >  Not Disclosed
                                         </span>
                                         <span class="pl-5 text-dark"><img src="http://cdn.onlinewebfonts.com/svg/img_356662.png" class="mb-1 mr-1" width="14.5"> 2-7 yrs</span>
+                                        </div>
                                         <div class="more p-2 text-dark">
                                             <span class='mb-1' style="display: flex; ">
                                             <div><em>Keyskills:</em></div>
@@ -559,60 +481,61 @@ class="content active " style="width: 100%" target="_blank">
                                     </div>
                                       </a>
                                         <span class="other-details p-2" style="width: 100%">
-                                            Current-Status:Available<img src="https://cdn1.iconfinder.com/data/icons/soft-toolbar-icons/512/check_apply_approved-512.png" width="15" class="ml-2 mb-1">
+                                            <label class="current-status-available"> Current-Status:Available</label><img src="https://cdn1.iconfinder.com/data/icons/soft-toolbar-icons/512/check_apply_approved-512.png" width="15" class="ml-2 mb-1">
                                         <span style="float: right ;"><em>Posted by:</em>
                                                 <img src="https://imageog.flaticon.com/icons/png/512/3/3657.png?size=1200x630f&pad=10,10,10,10&ext=png&bg=FFFFFFFF" width="25" class="mb-1">
                                             Sonal</span>
                                         </span>
 </div>                                                                                           
-<div  class=" row border container p-0 m-3 asdf" style="width:42rem;">
+<div  class=" row  container p-0  mt-3 ml-1 asdf" style="overflow: hidden; ">
                                                 <a title=" Urgent Requirement For School Teacher All Subject,Delhi NCR" class=" anchor1 link p-1"  href="/description 6/index.html"
                                                 class="content active " style="width: 100%" target="_blank">
-                                                <div style="text-align: center">
+                                                <div style="text-align: center" class="anchor-title">
                                                         Urgent Requirement For <b>School Teacher</b> All Subject,Delhi NCR
                                                 </div>
                                                 <span class="bk-warning rupees" >
                                                     <!-- <em></em>  -->
                                                     </span>
-                                                    
+                                                    <div class="salary-and-experience p-2">
                                                     <span class="pl-5 text-dark" >
                                                         <img class="mb-1" src="https://png.icons8.com/windows/1600/rupee.png" width="18" >  1,50,000-3,00,000 P.A
                                                 </span>
                                                 <span class="pl-5 text-dark"><img src="http://cdn.onlinewebfonts.com/svg/img_356662.png" class="mb-1 mr-1" width="14.5"> 0-3 yrs</span>
+                                              </div>
                                                 <div class="more p-2 text-dark">
                                                     <span class='mb-1' style="display: flex; ">
                                                     <div><em>Keyskills:</em></div>
                                                     <div class="pl-5 text-dark">Science teaching,Education...</div>
                                                     </span>
-                                                    
-                                                    <span class='mb-2' style="display:flex; ">
-                                                    <div>&nbsp;&nbsp;<em>Job: description</em></div> 
-                                                    <div class="pl-4 text-dark"> To teach and educate students according to guidelines provided by the National
-                                                            Curriculum Framew ...</div>
-                                                    </span>
-                                                </div>
-                                                </a>
-                                                <span class="other-details p-2" style="width: 100%">
-                                                    Current-Status:Available<img src="https://cdn1.iconfinder.com/data/icons/soft-toolbar-icons/512/check_apply_approved-512.png" width="15" class="ml-2 mb-1">
-                                                <span style="float: right ;"><em>Posted by:</em>
-                                                        <img src="https://imageog.flaticon.com/icons/png/512/3/3657.png?size=1200x630f&pad=10,10,10,10&ext=png&bg=FFFFFFFF" width="25" class="mb-1">
-                                                    Narendra Malik </span>
+                                                                                                        <span class='mb-2' style="display:flex; ">
+                                                <div>&nbsp;&nbsp;<em>Job: description</em></div> 
+                                                <div class="pl-4 text-dark"> To teach and educate students according to guidelines provided by the National
+                                                        Curriculum Framew ...</div>
                                                 </span>
+                                            </div>
+                                            </a>
+                                            <span class="other-details p-2" style="width: 100%">
+                                                <label class="current-status-available"> Current-Status:Available</label><img src="https://cdn1.iconfinder.com/data/icons/soft-toolbar-icons/512/check_apply_approved-512.png" width="15" class="ml-2 mb-1">
+<span style="float: right ;"><em>Posted by:</em>
+ <img src="https://imageog.flaticon.com/icons/png/512/3/3657.png?size=1200x630f&pad=10,10,10,10&ext=png&bg=FFFFFFFF" width="25" class="mb-1">
+Narendra Malik </span>
+</span>
 </div>
-<div  class=" row border container p-0 m-3 asdf" style="width:42rem;">
+<div  class=" row  container p-0  mt-3 ml-1 asdf" style="overflow: hidden; ">
                                                         <a title="Walk in Interviews for PTI Teachers in Alpine Convent School"class=" anchor1 link p-1"  href="#"
                                                         class="content active " style="width: 100%" target="_blank">
-                                                        <div style="text-align: center">
+                                                        <div class="anchor-title" style="text-align: center">
                                                             Hiring Montessori <b>Teacher</b> || Play <b>School</b> || Delhi
                                                         </div>
                                                         <span class="bk-warning rupees" >
                                                             <!-- <em></em>  -->
                                                             </span>
-                                                            
+                                                            <div class="salary-and-experience p-2">
                                                             <span class="pl-5 text-dark">
                                                                 <img class="mb-1" src="https://png.icons8.com/windows/1600/rupee.png" width="18" > 1,00,000 - 4,25,000 P.A.
                                                         </span>
                                                         <span class="pl-5 text-dark"><img src="http://cdn.onlinewebfonts.com/svg/img_356662.png" class="mb-1 mr-1" width="14.5"> 0-5 yrs</span>
+                                                       </div>
                                                         <div class="more p-2 text-dark">
                                                             <span class='mb-1' style="display: flex; ">
                                                             <div><em>Keyskills:</em></div>
@@ -626,23 +549,24 @@ class="content active " style="width: 100%" target="_blank">
                                                         </div>
                                                         </a>
                                                         <span class="other-details p-2" style="width: 100%">
-                                                            Current-Status:Available<img src="https://cdn1.iconfinder.com/data/icons/soft-toolbar-icons/512/check_apply_approved-512.png" width="15" class="ml-2 mb-1">
+                                                            <label class="current-status-available"> Current-Status:Available</label><img src="https://cdn1.iconfinder.com/data/icons/soft-toolbar-icons/512/check_apply_approved-512.png" width="15" class="ml-2 mb-1">
                                                         <span style="float: right ;"><em>Posted by:</em>
                                                                 <img src="https://imageog.flaticon.com/icons/png/512/3/3657.png?size=1200x630f&pad=10,10,10,10&ext=png&bg=FFFFFFFF" width="25" class="mb-1">
                                                             Amit Gupta</span>
                                                         </span>            
 </div>
-<div  class=" row border container p-0 m-3 asdf" style="width:42rem;">
+<div  class=" row container p-0  mt-3 ml-1 asdf" style="overflow: hidden; ">
                                                                 <a title="Walk in Interviews for PTI Teachers in Alpine Convent School"class=" anchor1 link p-1"  href="#"
                                                                 class="content active " style="width: 100%" target="_blank">
-                                                                <div style="text-align: center">
+                                                                <div class="anchor-title" style="text-align: center">
                                                                     SST (history) <b>Teacher</b> for 11th & 12th Grade (icse Board)
                                                                 </div>
-                                                                    
+                                                                <div class="salary-and-experience p-2">
                                                                     <span class="pl-5 text-dark" >
                                                                         <img class="mb-1" src="https://png.icons8.com/windows/1600/rupee.png" width="18" >  3,00,000 - 6,00,000 P.A.
                                                                 </span>
                                                                 <span class="pl-5 text-dark"><img src="http://cdn.onlinewebfonts.com/svg/img_356662.png" class="mb-1 mr-1" width="14.5"> 2-7 yrs</span>
+                                                                </div>
                                                                 <div class="more p-2 text-dark">
                                                                     <span class='mb-1' style="display: flex; ">
                                                                     <div><em>Keyskills:</em></div>
@@ -657,26 +581,27 @@ class="content active " style="width: 100%" target="_blank">
                                                                 </div>
                                                                 </a>
                                                                 <span class="other-details p-2" style="width: 100%">
-                                                                    Current-Status:Available<img src="https://cdn1.iconfinder.com/data/icons/soft-toolbar-icons/512/check_apply_approved-512.png" width="15" class="ml-2 mb-1">
+                                                                    <label class="current-status-available"> Current-Status:Available</label><img src="https://cdn1.iconfinder.com/data/icons/soft-toolbar-icons/512/check_apply_approved-512.png" width="15" class="ml-2 mb-1">
                                                                 <span style="float: right ;"><em>Posted by:</em>
                                                                         <img src="https://imageog.flaticon.com/icons/png/512/3/3657.png?size=1200x630f&pad=10,10,10,10&ext=png&bg=FFFFFFFF" width="25" class="mb-1">
                                                                     HR Avalon</span>
                                                                 </span>
 </div>
-<div  class=" row border  m-3 p-0    asdf" style="width:42rem;">
+<div  class=" row  container  mt-3 ml-1 p-0    asdf" style="overflow: hidden; ">
         <a title="Walk in Interviews for PTI Teachers in Alpine Convent School"class=" anchor1 link p-1"  href="description 7/index.html"
         class="content active " style="width: 100%" target="_blank">
-        <div style="text-align: center">
+        <div style="text-align: center" class="anchor-title">
                 Physics <b>Teacher</b>:ghatkesar
         </div>
         <span class="bk-warning rupees" >
             
             </span>
-            
+            <div class="salary-and-experience p-2">
             <span class="pl-5 text-dark" >
         <img class="mb-1" src="https://png.icons8.com/windows/1600/rupee.png" width="18" >   2,00,000 - 4,00,000 P.A.
         </span>
         <span class="pl-5 text-dark"><img src="http://cdn.onlinewebfonts.com/svg/img_356662.png" class="mb-1 mr-1" width="14.5"> 0-2 yrs</span>
+       </div>
         <div class="more p-2 text-dark">
             <span class='mb-1' style="display: flex; ">
             <div><em>Keyskills:</em></div>
@@ -691,7 +616,7 @@ class="content active " style="width: 100%" target="_blank">
         </div>
         </a>
         <span class="other-details p-2" style="width: 100%;">
-            Current-Status:Available<img src="https://cdn1.iconfinder.com/data/icons/soft-toolbar-icons/512/check_apply_approved-512.png" width="15" class="ml-2 mb-1">
+            <label class="current-status-available"> Current-Status:Available</label><img src="https://cdn1.iconfinder.com/data/icons/soft-toolbar-icons/512/check_apply_approved-512.png" width="15" class="ml-2 mb-1">
         <span style="float: right ;"><em>Posted by:</em> 
             <img src="https://imageog.flaticon.com/icons/png/512/3/3657.png?size=1200x630f&pad=10,10,10,10&ext=png&bg=FFFFFFFF" width="25" class="mb-1">
             Kumar</span>
@@ -785,8 +710,8 @@ Job Type</a>
 </div>
 </div>            
 </span> 
-
-      <div>
+<i class="fa fa-spinner reload-spinner fa-spin mt-3" style="font-size:48px;margin-left: 50%;visibility: hidden;"></i>
+      <!-- <div>
           <table class="page-table" role="presentation">
 <tbody>
     <tr >
@@ -798,15 +723,15 @@ Job Type</a>
     </tr>
 </tbody>
           </table>
-      </div>
+      </div> -->
 
-<footer class="bg-dark container-fluid pl-5">
+<footer class="bg-dark pl-5">
 <div class="row ">
   <div class="column col-4 ">
       <b class=" text-light font-size"><h6>Information</h6></b>
       <ul class="list-unstyled">
           <li><a class="  text-light font-size " href="#"> About Us</a></li>
-          <li><a class="link  text-light font-size " href="#">Terms and Conditions</a></li>
+          <li><a class="link  text-light font-size " href="/termsconditions">Terms and Conditions</a></li>
           <li><a class="link  text-light font-size " href="#">Privacy Policy</a></li>
           <li><a class="link  text-light font-size " href="#">Carrers with us</a></li>
           <li><a class="link  text-light font-size " href="#">Contact Us</a></li>
@@ -961,6 +886,9 @@ Job Type</a>
         
     </div>
 </div>  
+
+
+
 
 </body>
 </html>

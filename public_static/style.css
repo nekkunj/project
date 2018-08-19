@@ -2,6 +2,16 @@
     height:350px;
     width:80%
 }
+.carou-move{
+    width: 100%;
+}
+footer{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
 .pl-6{
 padding-right: 0px;
 width:100%;
@@ -24,13 +34,14 @@ opacity: 0.9;
 .asdf{
     flex-grow: 0.5;
     margin-left: 0 auto;
+    border: 1px solid #dee2e6;
 }
 .more{
     overflow: hidden;
     clear: left;
 }
 .data{
-    padding-left: 10%;
+    
     padding-top: 2px;
     
 }
@@ -52,29 +63,29 @@ opacity: 0.9;
     padding-left:auto;
     font-size:23px;
     text-align: center;
-    width:42rem;
+    
     height:70px;
 
     
     
 }
-body{
+/* body{
     font: normal 13px Arial, Helvetica, sans-serif;
-  }
+  } */
 .search-box{
     z-index: 10;
     position: absolute;
-    margin-left:15%;
+    margin-left:5%;
     top: 220px;
 }
-@media(max-width:600px){
+/* @media(max-width:600px){
     .search-box{
         margin-left: 10px;
     }
     .input-sm{
         width:200px;
     }
-}
+} */
 .filter{
     position: relative;
     top:100px;
@@ -114,12 +125,12 @@ margin-left:10%;
     border-radius:1px;
 }
 .search:hover input, .search input:focus {
-    width: 500px;
+    width: 50%;
     margin-left: -50px;
 }
 .btn-primary{
     position: absolute;
-    left: 355px;
+    left: 50%;
 height: 50px;
 width:200px;
 }
@@ -197,15 +208,32 @@ border: 1px solid white;
       border-collapse: collapse;text-align: left;
       margin: 30px auto 30px;
   }
-  @media(max-width:1000px){
+  @media(max-width:980px){
       .filter{
           display: none;}
         .new-filter{
             display: block;
             cursor: pointer;
-        }}
+        }
+        .asdf{
+            border: 1px black solid;
+            margin: 0px;
+        }
+.search:hover input, .search input:focus {
+    width: 300px;
+    margin-left: 100px;
+}
+        /* .carou-move{
+            width: 933px;
+        }
+footer{
+    width: 943px;    
+    margin-right: auto;
+    margin-left: auto;
+} */
+    }
    
-  @media(min-width:1000px){
+  @media(min-width:980px){
 .new-filter{
     display: none;
 }  
@@ -215,6 +243,25 @@ border: 1px solid white;
           display: none;        
       }
   }
+  @media(max-width:600px){
+    .search{
+        display: none;        
+    }
+    
+    body{
+    font: normal 13px Arial, Helvetica, sans-serif;
+    }
+    .anchor-title{
+        font:normal 15px Arial, Helvetica, sans-serif;
+    }
+    .current-status-available{
+        display: none
+    }
+    .salary-and-experience span{
+        display: block
+    }
+}
+
   .drop ul.ChkboxEnb li a.chkd{
     background-position: -42px -103px;
     background-color: #09F;
@@ -238,3 +285,4 @@ cursor: pointer;
 .new-filter-details{
     display: none;
 }
+

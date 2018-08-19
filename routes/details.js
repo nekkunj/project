@@ -24,9 +24,7 @@ res.redirect('/')
     })
 })
 
-roote.post('/next',(req,res)=>{
-    res.redirect('/')
-})
+
 exports = module.exports = {
     roote
 }

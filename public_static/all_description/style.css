@@ -1,0 +1,168 @@
+.search-form input.hover-input-search::-ms-input-placeholder {
+    display: none;
+  }
+  .hover-input-search{
+position: relative;
+width: 35px;
+left:442px;
+height:35px;
+border-radius:50%;
+margin: 5px;
+}
+ .form-control-feedback:hover~.hover-input-search,.hover-input-search:hover{
+transition: all 1s,border-radius 0s;
+width: 474px;
+left: 0px;
+border-radius: 25px;
+border-top-left-radius: 0px;
+border-bottom-left-radius: 0px;
+border: 1px solid white;
+}
+
+    
+ .form-control-feedback {
+    position: absolute;
+    top:2px;
+    left: 445px;
+    z-index: 10;
+
+    width: 34px;
+    height: 30px;
+    line-height: 10px;
+    color: #3596e0;
+  } 
+  .dropdown-item:hover{
+    
+    background-color:#343434;
+    
+    
+}
+
+
+@media(max-width:600px){
+  /* .notification-fixed{
+    display: none;
+  } */
+
+  .asdf{
+    border: 2px black solid;
+    margin: 0px;
+    width:80%;
+    left:10%;
+}
+
+  
+
+  body{
+  font: normal 13px Arial, Helvetica, sans-serif;
+  }
+  .anchor-title{
+      font:normal 15px Arial, Helvetica, sans-serif;
+  }
+  
+  .salary-and-experience span{
+      display: block;
+  }
+}
+
+.asdf{
+    flex-grow: 0.5;
+    
+ background-color: whitesmoke;
+ border: 1px solid #dee2e6;
+ position: absolute;
+ top: 15%;
+ left: 15%;   
+ 
+}
+
+.description{
+    width:800px;
+    background-color: whitesmoke;
+    font-size: 14px;
+   margin-top: -40px;
+   margin-left:10%;
+box-shadow: 10px 10px 10px #343434;
+}
+.contact-details-div{
+  display: none;
+  height: 0px;
+  transition:height 10s;
+  transition-timing-function: ease-in;
+}
+
+.contact-details:hover~.contact-details-div,.contact-details-div:hover{
+display: flex;
+height:150px;
+}
+
+
+.again-buttons{
+  background-color: whitesmoke;
+  /* width:800px; */
+  margin:10%;
+margin-top:15px;
+  box-shadow: 10px 10px 10px #343434;
+border-radius:5px;
+padding:10px;
+}
+.again-buttons span a,.again-buttons-one span a{
+  padding:5px;
+margin:2px; 
+
+}
+
+@media(max-width:980px){
+    .asdf{
+        border: 1px black solid;
+        margin: 0px;
+        
+        left:10%;
+    }
+    .description-and-email{
+      flex-wrap:wrap;
+    }
+  }
+
+.social-image-size{
+  height:23px;
+  width: 23px;
+}
+#myBtn {
+  display: none; 
+  position: fixed; /* Fixed/sticky position */
+  bottom: 50px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border:1px red;
+  border-radius:50%; 
+  outline: none; /* Remove outline */
+ 
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; 
+  
+  font-size: 18px; 
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+.notification-fixed{
+  height:220px;
+  width:300px;
+  border-top:6px yellowgreen solid;
+  position:sticky;
+  z-index:10;
+  top:100px;
+  left:30%;
+  margin: 10px;
+  background-color: whitesmoke;
+  box-shadow: 5px 5px 5px #343434;
+  font-size:14px;
+
+}
+.notification-fixed .input-email{
+  border-radius:20px;
+ width:200px; 
+}
