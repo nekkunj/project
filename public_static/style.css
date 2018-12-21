@@ -116,7 +116,7 @@ margin-left:10%;
     position: absolute;
     width: 0px;
     float: Left;
-    margin-left: 500px;
+    margin-left: 60%;
     
     transition: all 0.7s ease-in-out; 
     height: 50px;
@@ -126,7 +126,7 @@ margin-left:10%;
 }
 .search:hover input, .search input:focus {
     width: 50%;
-    margin-left: -50px;
+    margin-left: 20px;
 }
 .btn-primary{
     position: absolute;
@@ -142,7 +142,13 @@ width:200px;
 }
 
 .asdf:hover{
-    background-color: beige;
+     /* background-color: beige;  */
+     background-image: url("https://ae01.alicdn.com/kf/HTB1Gn19ik9WBuNjSspeq6yz5VXaT/light-color-wood-background-for-newborn-baby-simulation-plank-cloth-fruit-cake-backdrop-retro-board-computer.jpg_640x640.jpg");
+     
+}
+.new-filter:hover{
+background-color: beige; 
+background-image: none;
 }
 .page-link{
     background-color:#63d13e

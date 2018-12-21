@@ -20,7 +20,7 @@
     
 
     <nav class="navbar navbar-expand-lg  navbar-dark  fixed-top " style="background-color: rgba(247, 238, 238,1)">
-            <a href="https://www.naukri.com/"><img class="navbar-brand " style="margin-left: 3%" id="brand" src="Untitled.png" alt="logo">
+            <a href="Untitled.png"><img class="navbar-brand " style="margin-left: 3%" id="brand" src="Untitled.png" alt="logo">
             </a>    
         <button class="navbar-toggler bg-dark " type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon " ></span>
@@ -31,7 +31,7 @@
                     
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item nav-item-home" >
-                  <a class="nav-link text-dark" href="#">Home </a>
+                  <a class="nav-link text-dark" href="/">Home </a>
                 </li>
                 <li class="nav-item dropdown nav-item-jobs">
                   <a class="nav-link text-dark dropdown-toggle  " href="#"  id="navbardrop" data-toggle="dropdown">Jobs</a>
@@ -58,23 +58,23 @@
         <a href="#" >view all</a>                        
     </span>
                     <span class="m-2 "><span style="color: gray;">Location</span>
-                        <a class="dropdown-item text-light" href="#">Jobs in Delhi</a>
-                        <a class="dropdown-item text-light" href="#">Jobs in Mumbai</a>
-                        <a class="dropdown-item text-light" href="#">Jobs in Chennai</a>
-                        <a class="dropdown-item text-light" href="#">Jobs in Chandigarh</a>
-                        <a class="dropdown-item text-light" href="#">Jobs in Pune</a>
-                        <a class="dropdown-item text-light" href="#">Jobs in Kolkata</a>
-                        <a class="dropdown-item text-light" href="#">Jobs in Jaipur</a>
-                        <a href="#" >View all</a>
+                        <a class="dropdown-item text-light" href="/Jobs_in_delhi">Jobs in Delhi</a>
+                        <a class="dropdown-item text-light" href="/Jobs_in_mumbai">Jobs in Mumbai</a>
+                        <a class="dropdown-item text-light" href="/Jobs_in_chennai">Jobs in Chennai</a>
+                        <a class="dropdown-item text-light" href="/Jobs_in_chandigarh">Jobs in Chandigarh</a>
+                        <a class="dropdown-item text-light" href="/Jobs_in_pune">Jobs in Pune</a>
+                        <a class="dropdown-item text-light" href="/Jobs_in_kolkata">Jobs in Kolkata</a>
+                        <a class="dropdown-item text-light" href="/Jobs_in_jaipur">Jobs in Jaipur</a>
+                        <a href="/job_search_locations" >View all</a>
                     </span>
                     <span class="m-2"><span style="color: gray;">Qualification</span>
-                        <a class="dropdown-item text-light" href="#">B.Ed</a>
-                        <a class="dropdown-item text-light" href="#">B.A</a>
-                        <a class="dropdown-item text-light" href="#">B.Sc</a>
-                        <a class="dropdown-item text-light" href="#">B.Tech</a>
-                        <a class="dropdown-item text-light" href="#">B.B.A</a>
-                        <a class="dropdown-item text-light" href="#">M.Ed</a>
-                        <a class="dropdown-item text-light" href="#">DIET</a>
+                        <a class="dropdown-item text-light" href="/BEd_Jobs">B.Ed</a>
+                        <a class="dropdown-item text-light" href="/BA_Jobs">B.A</a>
+                        <a class="dropdown-item text-light" href="/BSc_jobs">B.Sc</a>
+                        <a class="dropdown-item text-light" href="/BTech_Jobs">B.Tech</a>
+                        <a class="dropdown-item text-light" href="/BBA_Jobs">B.B.A</a>
+                        <a class="dropdown-item text-light" href="/MEd_Jobs">M.Ed</a>
+                        <a class="dropdown-item text-light" href="/DIET_Jobs">DIET</a>
                         <a href="#" >view all</a>
 
                     </span>
@@ -88,8 +88,8 @@
                   <a class="nav-link text-dark dropdown-toggle" href="#" data-toggle="dropdown">Carrer advice</a>
                   <div class="dropdown-menu p-0">
                       <div style="background-color:#343a40">
-                        <a class="dropdown-item text-light" href="#">Job Searching tips</a>
-                        <a class="dropdown-item text-light" href="#">CV writing tips</a>
+                        <a class="dropdown-item text-light" href="/articles/howtogetajob">Job Searching tips</a>
+                        <a class="dropdown-item text-light" href="/articles/resume_writing_tips">CV writing tips</a>
                         <a class="dropdown-item text-light" href="#">Interview Preparation</a>
                         <a class="dropdown-item text-light" href="#">Expert speak</a>
                         <a class="dropdown-item text-light" href="#">FAQ</a>
@@ -120,9 +120,14 @@
                         </div>
                 </li>
             </ul>
+           <span class="login-signup">
             <a class="btn btn-outline-success ml-2" href="/account/login">Login</a>
             <a class="btn btn-outline-warning ml-2 " href="/account/signup">SignUp</a>
-
+</span>
+<span class="profile-name">
+Hi <span></span>
+    <a class="btn btn-outline-warning ml-2 signout-btn" href="/">SignOut</a>
+</span>
             </div>
           </nav>
           <button class="btn btn-info"onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
@@ -192,9 +197,9 @@
           <!-- card 1 -->
       <span style="display: flex;" id="maain-span">
 
-          <div  class=" data  container-fluid  "  id="card" style="margin-top: -50px;z-index: 10;">
+          <div  class=" data  container-fluid  "  id="card" style="margin-top: -50px;z-index: 10;min-height: 1300px;">
 
-                <div class="new-filter border-secondary border bg-light asdf row m-3" style="z-index: 100;">
+                <div class="new-filter border-secondary border container bg-light asdf row my-3" style="z-index: 100;">
 
 
                         <div class=" pt-1 pl-3 pb-3 new-filter-click " style="text-align: center;height: 30px;border-radius: 50%;" >
@@ -215,12 +220,12 @@
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdxBGhE3sABqTG4g6Ddrmx-HwQoUor0ygvP-6H-YD3uQfZvzzY" height="12">
                         Location</a>
                     </div>
-                        <div class="location-inside ">    
-                            <label><input type="checkbox" >Delhi</label><br>
-                            <label><input type="checkbox">Delhi NCR</label><br>
-                            <label><input type="checkbox">Gurgaon</label><br>
-                            <label><input type="checkbox">Bengaluru</label><br>
-                            <label class="morelocations"  style="color: blue;">more</label>
+                        <div class="location-inside morelocations-details-details">    
+                            <label><input name="locationcheckbox"  type="checkbox" value="Delhi">Delhi</label><br>
+                            <label><input  name="locationcheckbox" type="checkbox" value="Delhi NCR">Delhi NCR</label><br>
+                            <label><input  name="locationcheckbox" type="checkbox" value="Gurgaon">Gurgaon</label><br>
+                            <label><input  name="locationcheckbox" type="checkbox" value="Bengaluru">Bengaluru</label><br>
+                            <label class="morelocations"  style="color: blue;" >more</label>
                     
                     </div>
                     
@@ -229,12 +234,12 @@
                             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdxBGhE3sABqTG4g6Ddrmx-HwQoUor0ygvP-6H-YD3uQfZvzzY" height="12">
                     Top Companies</a>
                     </div>
-                        <div class="topschools-inside ">
-                            <label><input type="checkbox" >Amity University</label><br>
-                            <label><input type="checkbox">Genpact</label><br>
-                            <label><input type="checkbox">Amazon Development Centre </label><br>
-                            <label><input type="checkbox">Modern Vidya Niketan</label><br>
-                            <label><input type="checkbox">NIIT</label><br>
+                        <div class="topschools-inside more-schools-details-details">
+                            <label><input name="schoolscheckbox"  type="checkbox" value="Amity University">Amity University</label><br>
+                            <label><input  name="schoolscheckbox" type="checkbox" value="Genpact">Genpact</label><br>
+                            <label><input  name="schoolscheckbox" type="checkbox" value="Amazon Development Centre">Amazon Development Centre </label><br>
+                            <label><input  name="schoolscheckbox" type="checkbox" value="Modern Vidya Niketan">Modern Vidya Niketan</label><br>
+                            <label><input  name="schoolscheckbox" type="checkbox" value="NIIT">NIIT</label><br>
                             <label class="more-schools"  style="color: blue;">more</label>
                                 </div>
                     
@@ -242,12 +247,12 @@
                             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdxBGhE3sABqTG4g6Ddrmx-HwQoUor0ygvP-6H-YD3uQfZvzzY" height="12">
                     Salary</a>
                     </div>
-                    <div class="salary-inside ">
-                    <label><input type="checkbox">0-3 Lakhs</label><br>
-                    <label><input type="checkbox">3-6 Lakhs</label><br>
-                    <label><input type="checkbox">6-10 Lakhs</label><br>
-                    <label><input type="checkbox">10-15 Lakhs</label><br>
-                    <label><input type="checkbox">15-25 Lakhs</label><br>
+                    <div class="salary-inside more-salary-details-details">
+                    <label><input type="checkbox" name="salarycheckbox" value="0">0-3 Lakhs</label><br>
+                    <label><input type="checkbox" name="salarycheckbox" value="300000">3-6 Lakhs</label><br>
+                    <label><input type="checkbox" name="salarycheckbox" value="600000">6-10 Lakhs</label><br>
+                    <label><input type="checkbox" name="salarycheckbox" value="1000000">10-15 Lakhs</label><br>
+                    <label><input type="checkbox" name="salarycheckbox" value="1500000">15-25 Lakhs</label><br>
                     <label class="more-salary"  style="color: blue;">more</label>
                     
                     </div>
@@ -255,12 +260,12 @@
                     <div style="width:100%;" class="new-filter-details education" class="mr-0 filter-on-click"><a class='btn-light btn' style="width:100%;text-align: left;">
                             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdxBGhE3sABqTG4g6Ddrmx-HwQoUor0ygvP-6H-YD3uQfZvzzY" height="12">
                     Education</a>
-                    <div  class="education-inside">
-                        <label><input type="checkbox">Any Graduate</label><br>
-                            <label><input type="checkbox">B.Ed</label><br>
-                                <label><input type="checkbox">B.A</label><br>
-                                    <label><input type="checkbox">M.Com</label><br>
-                                        <label><input type="checkbox">Any Postgraduate</label><br>
+                    <div  class="education-inside more-education-details-details">
+                        <label><input type="checkbox" name="educationcheckbox" value="Any Graduate">Any Graduate</label><br>
+                            <label><input type="checkbox" name="educationcheckbox" value="B.Ed">B.Ed</label><br>
+                                <label><input type="checkbox" name="educationcheckbox" value="B.A">B.A</label><br>
+                                    <label><input type="checkbox" name="educationcheckbox" value="M.Com">M.Com</label><br>
+                                        <label><input type="checkbox" name="educationcheckbox" value="Any Postgraduate">Any Postgraduate</label><br>
                     <label class="more-education"  style="color: blue;">more</label>
                     
                             </div>
@@ -269,17 +274,19 @@
                             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdxBGhE3sABqTG4g6Ddrmx-HwQoUor0ygvP-6H-YD3uQfZvzzY" height="12">
                     Job Type</a>
                     <div  class="jobtype-inside new-filter-details-inside">
-                            <input type="checkbox">All Jobs<br>
-                            <input type="checkbox">PSU/Government<br>
-                            <input type="checkbox">Walk-in<br>
+                        <label><input type="checkbox" name="jobtypecheckbox" value="All Jobs">All Jobs</label><br>
+                        <label><input type="checkbox" name="jobtypecheckbox" value="PSU/Government">PSU/Government</label><br>
+                        <label><input type="checkbox" name="jobtypecheckbox" value="Walk-in">Walk-in</label><br>
+                        <label><input type="checkbox" name="jobtypecheckbox" value="Full time">Full time</label><br>
+                        <label><input type="checkbox" name="jobtypecheckbox" value="Part time">Part time</label><br>
                             </div>
                     </div>
                     </div>    
-            <div class="suggested-results other-details container row  asdf ml-1">50 suggesteded Results  </div>
+           <div class="suggested-results-div"> </div>
            
 
-          <div  class=" row  container  mt-3 ml-1 p-0    asdf" style="overflow: hidden;">
-<a title="Walk in Interviews for PTI Teachers in Alpine Convent School"class=" anchor1 link p-1"  href="description 7/index.html"
+          <div  class=" row  container  mt-3 ml-1 p-0   cardnumber asdf" style="overflow: hidden;">
+<a title="Walk in Interviews for PTI Teachers in Alpine Convent School" class=" anchor1 link p-1"  href="/description/Walk_in_Interviews_for_PTI_Teachers_in_Alpine_Convent_School"
 class="content active " style="width: 100%" target="_blank">
 <div style="text-align: center " class="anchor-title">
     Walk in Interviews for PTI 
@@ -314,12 +321,10 @@ class="content active " style="width: 100%" target="_blank">
     D k Sharma</span>
 </span>
 </div>  
-<div  class=" row  container p-0  mt-3 ml-1 asdf" style="overflow: hidden;">
-        <a title="Walk in Interviews for PTI Teachers in Alpine Convent School"class=" anchor1 link p-1"  href="description 2/index.html"      class="content active " style="width: 100%" target="_blank">
+<div  class=" row  container p-0  mt-3 ml-1 asdf cardnumber" style="overflow: hidden;">
+        <a title="Walk in Interviews for PTI Teachers in Alpine Convent School"class=" anchor1 link p-1"  href="/description/Primary_School_Teacher_in_KP_EDUCATIONAL_ACADEMY" class="content active " style="width: 100%" target="_blank">
         <div style="text-align: center" class="anchor-title">
-            Primary
-            <b>School Teacher</b>
-            in KP EDUCATIONAL ACADEMY
+            Primary <b>School Teacher</b> in KP EDUCATIONAL ACADEMY
         </div>
         <span class="bk-warning rupees" >
             <!-- <em></em>  -->
@@ -350,8 +355,8 @@ class="content active " style="width: 100%" target="_blank">
             P Kiran Kumar</span>
         </span>
 </div>
-<div  class=" row  container p-0  mt-3 ml-1 asdf" style="overflow: hidden;">
-                <a title="Walk in Interviews for PTI Teachers in Alpine Convent School" class=" anchor1 link p-1"  href="/description 3/index.html"
+<div  class=" row  container p-0  mt-3 ml-1 asdf cardnumber" style="overflow: hidden;">
+                <a title="Walk in Interviews for PTI Teachers in Alpine Convent School" class=" anchor1 link p-1"  href="/description/Teachers_for_Reputed_Schools_Dharmapuri_Salem"
                 class="content active " style="width: 100%" target="blank">
                 <div style="text-align: center" class="anchor-title">
                         <b>Teachers</b> (All Subjects) for Reputed <b>Schools</b> | Dharmapuri, Salem
@@ -384,8 +389,8 @@ class="content active " style="width: 100%" target="_blank">
                     HR - Priyadharshini</span>
                 </span>
 </div>
-<div  class=" row  container p-0  mt-3 ml-1 asdf" style="overflow: hidden;">
-                        <a title="Walk in Interviews for PTI Teachers in Alpine Convent School"class=" anchor1 link p-1"  href="description 1/index.html"
+<div  class=" row  container p-0  mt-3 ml-1 asdf cardnumber" style="overflow: hidden;">
+                        <a title="Walk in Interviews for PTI Teachers in Alpine Convent School"class=" anchor1 link p-1"  href="/description/Content_Developer_Maths_&_Science_K_10"
                         class="content active " style="width: 100%" target="_blank">
                         <div style="text-align: center" class="anchor-title">
                             Content Developer - Maths & Science ( K-10 )
@@ -418,8 +423,8 @@ class="content active " style="width: 100%" target="_blank">
                             Kumar Vivek</span>
                         </span>
 </div>
-<div  class=" row  container p-0  mt-3 ml-1 asdf" style="overflow: hidden; ">
-                                <a title="Walk in Interviews for PTI Teachers in Alpine Convent School"class=" anchor1 link p-1"  href="/description 4/index.html"
+<div  class=" row  container p-0  mt-3 ml-1 asdf cardnumber" style="overflow: hidden; ">
+                                <a title="Walk in Interviews for PTI Teachers in Alpine Convent School"class=" anchor1 link p-1"  href="/description/Hiring_PGT_Teachers_for_Renowned_CBSE_School_II_Lakhimpur_u.p"
                                 class="content active " style="width: 100%" target="_blank">
                                 <div style="text-align: center" class="anchor-title">
                                         Hiring PGT <b>Teachers</b> for Renowned <b>CBSE</b> School II Lakhimpur (u.p)
@@ -453,8 +458,8 @@ class="content active " style="width: 100%" target="_blank">
                                     Amit Gupta</span>
                                 </span>
 </div>
-<div  class=" row  container p-0  mt-3 ml-1 asdf" style="overflow: hidden; ">
-                                        <a title="Walk in Interviews for PTI Teachers in Alpine Convent School"class=" anchor1 link p-1"  href="/description 5/index.html"
+<div  class=" row  container p-0  mt-3 ml-1 asdf cardnumber" style="overflow: hidden; ">
+                                        <a title="Walk in Interviews for PTI Teachers in Alpine Convent School"class=" anchor1 link p-1"  href="/description/Hiring_Teachers_Reputed_CBSE_School_II_Greater_Noida"
                                         class="content active " style="width: 100%" target="_blank">
                                         <div style="text-align: center" class="anchor-title">
                                                 Hiring <b>Teachers</b> II Reputed CBSE <b>School</b> II Greater Noida
@@ -487,8 +492,8 @@ class="content active " style="width: 100%" target="_blank">
                                             Sonal</span>
                                         </span>
 </div>                                                                                           
-<div  class=" row  container p-0  mt-3 ml-1 asdf" style="overflow: hidden; ">
-                                                <a title=" Urgent Requirement For School Teacher All Subject,Delhi NCR" class=" anchor1 link p-1"  href="/description 6/index.html"
+<div  class=" row  container p-0  mt-3 ml-1 asdf cardnumber" style="overflow: hidden; ">
+                                                <a title=" Urgent Requirement For School Teacher All Subject,Delhi NCR" class=" anchor1 link p-1"  href="/description/Urgent_Requirement_For_School_Teacher_All_Subject_Delhi_NCR"
                                                 class="content active " style="width: 100%" target="_blank">
                                                 <div style="text-align: center" class="anchor-title">
                                                         Urgent Requirement For <b>School Teacher</b> All Subject,Delhi NCR
@@ -521,107 +526,7 @@ class="content active " style="width: 100%" target="_blank">
 Narendra Malik </span>
 </span>
 </div>
-<div  class=" row  container p-0  mt-3 ml-1 asdf" style="overflow: hidden; ">
-                                                        <a title="Walk in Interviews for PTI Teachers in Alpine Convent School"class=" anchor1 link p-1"  href="#"
-                                                        class="content active " style="width: 100%" target="_blank">
-                                                        <div class="anchor-title" style="text-align: center">
-                                                            Hiring Montessori <b>Teacher</b> || Play <b>School</b> || Delhi
-                                                        </div>
-                                                        <span class="bk-warning rupees" >
-                                                            <!-- <em></em>  -->
-                                                            </span>
-                                                            <div class="salary-and-experience p-2">
-                                                            <span class="pl-5 text-dark">
-                                                                <img class="mb-1" src="https://png.icons8.com/windows/1600/rupee.png" width="18" > 1,00,000 - 4,25,000 P.A.
-                                                        </span>
-                                                        <span class="pl-5 text-dark"><img src="http://cdn.onlinewebfonts.com/svg/img_356662.png" class="mb-1 mr-1" width="14.5"> 0-5 yrs</span>
-                                                       </div>
-                                                        <div class="more p-2 text-dark">
-                                                            <span class='mb-1' style="display: flex; ">
-                                                            <div><em>Keyskills:</em></div>
-                                                            <div class="pl-5 text-dark">School,Education,Montessori,Teaching,Training,Hiring...</div>
-                                                            </span>
-                                                            
-                                                            <span class='mb-2' style="display:flex; ">
-                                                            <div>&nbsp;&nbsp;<em>Job: description</em></div>
-                                                            <div class="pl-4 text-dark"> The Group is a leading educational setup driven by a passion for excellence in education and quality in life...</div>
-                                                            </span>
-                                                        </div>
-                                                        </a>
-                                                        <span class="other-details p-2" style="width: 100%">
-                                                            <label class="current-status-available"> Current-Status:Available</label><img src="https://cdn1.iconfinder.com/data/icons/soft-toolbar-icons/512/check_apply_approved-512.png" width="15" class="ml-2 mb-1">
-                                                        <span style="float: right ;"><em>Posted by:</em>
-                                                                <img src="https://imageog.flaticon.com/icons/png/512/3/3657.png?size=1200x630f&pad=10,10,10,10&ext=png&bg=FFFFFFFF" width="25" class="mb-1">
-                                                            Amit Gupta</span>
-                                                        </span>            
-</div>
-<div  class=" row container p-0  mt-3 ml-1 asdf" style="overflow: hidden; ">
-                                                                <a title="Walk in Interviews for PTI Teachers in Alpine Convent School"class=" anchor1 link p-1"  href="#"
-                                                                class="content active " style="width: 100%" target="_blank">
-                                                                <div class="anchor-title" style="text-align: center">
-                                                                    SST (history) <b>Teacher</b> for 11th & 12th Grade (icse Board)
-                                                                </div>
-                                                                <div class="salary-and-experience p-2">
-                                                                    <span class="pl-5 text-dark" >
-                                                                        <img class="mb-1" src="https://png.icons8.com/windows/1600/rupee.png" width="18" >  3,00,000 - 6,00,000 P.A.
-                                                                </span>
-                                                                <span class="pl-5 text-dark"><img src="http://cdn.onlinewebfonts.com/svg/img_356662.png" class="mb-1 mr-1" width="14.5"> 2-7 yrs</span>
-                                                                </div>
-                                                                <div class="more p-2 text-dark">
-                                                                    <span class='mb-1' style="display: flex; ">
-                                                                    <div><em>Keyskills:</em></div>
-                                                                    <div class="pl-5 text-dark">College,history,Teaching,lecture,professor,faculty...</div>
-                                                                    </span>
-                                                                    
-                                                                    <span class='mb-2' style="display:flex; ">
-                                                                    <div>&nbsp;&nbsp;<em>Job: description</em></div>
-                                                                    <div class="pl-4 text-dark"> Job Description Send me Jobs like this
-                                                                        We are looking for a SST (History) Teacher to teach 11th & 12th Grade (ICSE Board). ...</div>
-                                                                    </span>
-                                                                </div>
-                                                                </a>
-                                                                <span class="other-details p-2" style="width: 100%">
-                                                                    <label class="current-status-available"> Current-Status:Available</label><img src="https://cdn1.iconfinder.com/data/icons/soft-toolbar-icons/512/check_apply_approved-512.png" width="15" class="ml-2 mb-1">
-                                                                <span style="float: right ;"><em>Posted by:</em>
-                                                                        <img src="https://imageog.flaticon.com/icons/png/512/3/3657.png?size=1200x630f&pad=10,10,10,10&ext=png&bg=FFFFFFFF" width="25" class="mb-1">
-                                                                    HR Avalon</span>
-                                                                </span>
-</div>
-<div  class=" row  container  mt-3 ml-1 p-0    asdf" style="overflow: hidden; ">
-        <a title="Walk in Interviews for PTI Teachers in Alpine Convent School"class=" anchor1 link p-1"  href="description 7/index.html"
-        class="content active " style="width: 100%" target="_blank">
-        <div style="text-align: center" class="anchor-title">
-                Physics <b>Teacher</b>:ghatkesar
-        </div>
-        <span class="bk-warning rupees" >
-            
-            </span>
-            <div class="salary-and-experience p-2">
-            <span class="pl-5 text-dark" >
-        <img class="mb-1" src="https://png.icons8.com/windows/1600/rupee.png" width="18" >   2,00,000 - 4,00,000 P.A.
-        </span>
-        <span class="pl-5 text-dark"><img src="http://cdn.onlinewebfonts.com/svg/img_356662.png" class="mb-1 mr-1" width="14.5"> 0-2 yrs</span>
-       </div>
-        <div class="more p-2 text-dark">
-            <span class='mb-1' style="display: flex; ">
-            <div><em>Keyskills:</em></div>
-            <div class="pl-5 text-dark">Teaching,School,CBSE,Physics,Physics Teacher,physics faculty...</div>
-            </span>
-            
-            <span class='mb-2' style="display:flex; ">
-            <div>&nbsp;&nbsp;<em>Job: description</em></div>
-            <div class="pl-4 text-dark">Job Description Send me Jobs like this
-                    We are looking for Physics Teacher(8,9,10 classes) for a Reputed CBSE School ...</div>
-            </span>
-        </div>
-        </a>
-        <span class="other-details p-2" style="width: 100%;">
-            <label class="current-status-available"> Current-Status:Available</label><img src="https://cdn1.iconfinder.com/data/icons/soft-toolbar-icons/512/check_apply_approved-512.png" width="15" class="ml-2 mb-1">
-        <span style="float: right ;"><em>Posted by:</em> 
-            <img src="https://imageog.flaticon.com/icons/png/512/3/3657.png?size=1200x630f&pad=10,10,10,10&ext=png&bg=FFFFFFFF" width="25" class="mb-1">
-            Kumar</span>
-        </span>
-        </div>
+
 
 
 
@@ -649,11 +554,11 @@ Narendra Malik </span>
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdxBGhE3sABqTG4g6Ddrmx-HwQoUor0ygvP-6H-YD3uQfZvzzY" height="12">
     Location</a>
 </div>
-    <div class="location-inside">    
-        <label><input type="checkbox" >Delhi</label><br>
-        <label><input type="checkbox">Delhi NCR</label><br>
-        <label><input type="checkbox">Gurgaon</label><br>
-        <label><input type="checkbox">Bengaluru</label><br>
+    <div class="location-inside morelocations-details-details">    
+        <label><input name="locationcheckbox"  type="checkbox" value="Delhi">Delhi</label><br>
+        <label><input  name="locationcheckbox" type="checkbox" value="Delhi NCR">Delhi NCR</label><br>
+        <label><input  name="locationcheckbox" type="checkbox" value="Gurgaon">Gurgaon</label><br>
+        <label><input  name="locationcheckbox" type="checkbox" value="Bengaluru">Bengaluru</label><br>
         <label class="morelocations"  style="color: blue;">more</label>
 
 </div>
@@ -663,12 +568,12 @@ Narendra Malik </span>
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdxBGhE3sABqTG4g6Ddrmx-HwQoUor0ygvP-6H-YD3uQfZvzzY" height="12">
 Top Companies</a>
 </div>
-    <div class="topschools-inside">
-        <label><input type="checkbox" >Amity University</label><br>
-        <label><input type="checkbox">Genpact</label><br>
-        <label><input type="checkbox">Amazon Development Centre </label><br>
-        <label><input type="checkbox">Modern Vidya Niketan</label><br>
-        <label><input type="checkbox">NIIT</label><br>
+    <div class="topschools-inside more-schools-details-details">
+        <label><input name="schoolscheckbox"  type="checkbox" value="Amity University">Amity University</label><br>
+                            <label><input  name="schoolscheckbox" type="checkbox" value="Genpact">Genpact</label><br>
+                            <label><input  name="schoolscheckbox" type="checkbox" value="Amazon Development Centre">Amazon Development Centre </label><br>
+                            <label><input  name="schoolscheckbox" type="checkbox" value="Modern Vidya Niketan">Modern Vidya Niketan</label><br>
+                            <label><input  name="schoolscheckbox" type="checkbox" value="NIIT">NIIT</label><br>
         <label class="more-schools"  style="color: blue;">more</label>
             </div>
 
@@ -676,12 +581,12 @@ Top Companies</a>
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdxBGhE3sABqTG4g6Ddrmx-HwQoUor0ygvP-6H-YD3uQfZvzzY" height="12">
 Salary</a>
 </div>
-<div class="salary-inside">
-<label><input type="checkbox">0-3 Lakhs</label><br>
-<label><input type="checkbox">3-6 Lakhs</label><br>
-<label><input type="checkbox">6-10 Lakhs</label><br>
-<label><input type="checkbox">10-15 Lakhs</label><br>
-<label><input type="checkbox">15-25 Lakhs</label><br>
+<div class="salary-inside more-salary-details-details">
+    <label><input type="checkbox" name="salarycheckbox" value="0">0-3 Lakhs</label><br>
+    <label><input type="checkbox" name="salarycheckbox" value="300000">3-6 Lakhs</label><br>
+    <label><input type="checkbox" name="salarycheckbox" value="600000">6-10 Lakhs</label><br>
+    <label><input type="checkbox" name="salarycheckbox" value="1000000">10-15 Lakhs</label><br>
+    <label><input type="checkbox" name="salarycheckbox" value="1500000">15-25 Lakhs</label><br>
 <label class="more-salary"  style="color: blue;">more</label>
 
 </div>
@@ -689,12 +594,12 @@ Salary</a>
 <div style="width:100%;" class="education" class="mr-0 filter-on-click"><a class='btn-light btn' style="width:100%;text-align: left;">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdxBGhE3sABqTG4g6Ddrmx-HwQoUor0ygvP-6H-YD3uQfZvzzY" height="12">
 Education</a>
-<div  class="education-inside">
-    <label><input type="checkbox">Any Graduate</label><br>
-        <label><input type="checkbox">B.Ed</label><br>
-            <label><input type="checkbox">B.A</label><br>
-                <label><input type="checkbox">M.Com</label><br>
-                    <label><input type="checkbox">Any Postgraduate</label><br>
+<div  class="education-inside more-education-details-details">
+    <label><input type="checkbox" name="educationcheckbox" value="Any Graduate">Any Graduate</label><br>
+    <label><input type="checkbox" name="educationcheckbox" value="B.Ed">B.Ed</label><br>
+        <label><input type="checkbox" name="educationcheckbox" value="B.A">B.A</label><br>
+            <label><input type="checkbox" name="educationcheckbox" value="M.Com">M.Com</label><br>
+                <label><input type="checkbox" name="educationcheckbox" value="Any Postgraduate">Any Postgraduate</label><br>
 <label class="more-education"  style="color: blue;">more</label>
 
         </div>
@@ -703,9 +608,11 @@ Education</a>
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdxBGhE3sABqTG4g6Ddrmx-HwQoUor0ygvP-6H-YD3uQfZvzzY" height="12">
 Job Type</a>
 <div  class="jobtype-inside">
-        <input type="checkbox">All Jobs<br>
-        <input type="checkbox">PSU/Government<br>
-        <input type="checkbox">Walk-in<br>
+        <label><input type="checkbox" name="jobtypecheckbox" value="All Jobs">All Jobs</label><br>
+            <label><input type="checkbox" name="jobtypecheckbox" value="PSU/Government">PSU/Government</label><br>
+                <label><input type="checkbox" name="jobtypecheckbox" value="Walk-in">Walk-in</label><br>
+                <label><input type="checkbox" name="jobtypecheckbox" value="Full time">Full time</label><br>
+                <label><input type="checkbox" name="jobtypecheckbox" value="Part time">Part time</label><br>
         </div>
 </div>
 </div>            
@@ -734,7 +641,7 @@ Job Type</a>
           <li><a class="link  text-light font-size " href="/termsconditions">Terms and Conditions</a></li>
           <li><a class="link  text-light font-size " href="#">Privacy Policy</a></li>
           <li><a class="link  text-light font-size " href="#">Carrers with us</a></li>
-          <li><a class="link  text-light font-size " href="#">Contact Us</a></li>
+          <li><a class="link  text-light font-size " href="/contact-us">Contact Us</a></li>
           <li><a class="link  text-light font-size " href="#">FAQs</a></li>
           <li><a class="link  text-light font-size " href="#">Notices</a></li>
       </ul>
@@ -742,22 +649,22 @@ Job Type</a>
   <div class="column col ">
       <b class=" text-light font-size"><h6>Jobs by places</h6></b>
       <ul class="list-unstyled">
-    <li><a class="link  text-light font-size " href="#"> India </a></li>
-    <li><a class="link  text-light font-size " href="#"> Delhi </a></li>
-    <li><a class="link  text-light font-size" href="#"> Chandigarh </a></li>
-    <li><a class="link  text-light font-size" href="#"> Banglore </a></li>
-    <li><a class="link  text-light font-size" href="#"> Chennai </a></li>
-    <li><a class="link  text-light font-size" href="#"> Kolkata </a></li>
-    <li><a class="link  text-light font-size" href="#"> Gurugram </a></li>
-    <li><a class="link  text-light font-size" href="#"> Mumbai </a></li>
+    <li><a class="link  text-light font-size " href="/Jobs_in_india"> India </a></li>
+    <li><a class="link  text-light font-size " href="/Jobs_in_delhi"> Delhi </a></li>
+    <li><a class="link  text-light font-size" href="/Jobs_in_chandigarh"> Chandigarh </a></li>
+    <li><a class="link  text-light font-size" href="/Jobs_in_pune"> Pune </a></li>
+    <li><a class="link  text-light font-size" href="/Jobs_in_chennai"> Chennai </a></li>
+    <li><a class="link  text-light font-size" href="/Jobs_in_kolkata"> Kolkata </a></li>
+    <li><a class="link  text-light font-size" href="/Jobs_in_jaipur">Jaipur</a></li>
+    <li><a class="link  text-light font-size" href="/Jobs_in_mumbai"> Mumbai </a></li>
   </div>
   <div class="column col-4">
      <div class="font-size text-light"> Follow us</div>
      <ul class="list-unstyled">
          <li>
-            <a class="  text-light font-size nounderline" href="#">  <img  class="social-image-size "src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/facebook_square-512.png"> </a>
-            <a class="  text-light font-size nounderline" href="#">  <img  class="social-image-size "src="https://d1afx9quaogywf.cloudfront.net/sites/default/files/Logos/Instagram-v051916_0.png"> </a>
-            <a class="  text-light font-size nounderline" href="#">  <img  class="social-image-size "src="https://pbs.twimg.com/profile_images/1013798240683266048/zRim1x6M_400x400.jpg"> </a>
+            <a class="  text-light font-size nounderline" href="https://www.facebook.com/NekkunjPilani">  <img  class="social-image-size "src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/facebook_square-512.png"> </a>
+            <a class="  text-light font-size nounderline" href="https://www.instagram.com/nekkunj/?hl=en">  <img  class="social-image-size "src="https://is3-ssl.mzstatic.com/image/thumb/Purple128/v4/f4/a2/c3/f4a2c31a-84da-6b6f-5def-fe6a4b515828/Prod-1x_U007emarketing-85-220-0-5.png/246x0w.jpg"> </a>
+            <a class="  text-light font-size nounderline" href="https://twitter.com/nekkunj">  <img  class="social-image-size "src="https://pbs.twimg.com/profile_images/1013798240683266048/zRim1x6M_400x400.jpg"> </a>
         </li>
      </ul>
   </div>
@@ -768,121 +675,121 @@ Job Type</a>
 </footer>
 
 
-<div class="morelocations-details" style="display:none;">
+<div class="morelocations-details morelocations-details-details" style="display:none;">
     <div class="border border-secondary text-secondary p-2"style="text-align: center">
         <b >Location</b>
         <div class="cross-icon">X</div>
     </div>
     <div style="padding: 40px;">
-        <label><input type="checkbox" >Delhi</label>
-        <label style="float:left"><input type="checkbox">Delhi NCR</label><br>
-        <label><input type="checkbox">Gurgaon</label>
-        <label style="float: left"><input type="checkbox">Bengaluru</label><br>
-        <label><input type="checkbox">Bengaluru</label>
-        <label style="float: left"><input type="checkbox">Hyderabad</label><br> 
-        <label><input type="checkbox">Mumbai</label>
-        <label style="float:  left"><input type="checkbox">Pune</label><br>
-        <label><input type="checkbox">Gwalior</label>
-        <label style="float:  left"><input type="checkbox">Chennai</label><br>
-        <label><input type="checkbox">Jaipur </label>
-        <label style="float: left"><input type="checkbox">Noida</label><br>
-        <label><input type="checkbox">Ghaziabad</label>
-        <label style="float:  left"><input type="checkbox">Coimbatore </label><br>
-        <label><input type="checkbox">Ahmedabad</label>
-        <label style="float:  left"><input type="checkbox">Meerut</label><br>
-        <label><input type="checkbox">Surat </label>
-        <label style="float:  left"><input type="checkbox">Kolkata</label><br>
-         <label><input type="checkbox">Bhopal</label>
-        <label style="float:  left"><input type="checkbox">Indore </label><br>
-        <label><input type="checkbox">Kanpur </label>
-        <label style="float:  left"><input type="checkbox">Greater Noida </label></div>
+        <label><input type="checkbox" name="locationcheckbox" value="Delhi" >Delhi</label>
+        <label style="float:left"><input name="locationcheckbox" type="checkbox" value="Delhi NCR" >Delhi NCR</label><br>
+        <label><input type="checkbox" name="locationcheckbox" value="gurgaon">Gurgaon</label>
+        <label style="float: left"><input name="locationcheckbox" type="checkbox" value="bengaluru">Bengaluru</label><br>
+        <label><input type="checkbox" name="locationcheckbox" value="beng">Bengaluru</label>
+        <label style="float: left"><input  name="locationcheckbox" type="checkbox" value="hyderabad">Hyderabad</label><br> 
+        <label><input type="checkbox" name="locationcheckbox" value="mumbai">Mumbai</label>
+        <label style="float:  left"><input  name="locationcheckbox" value="pune" type="checkbox">Pune</label><br>
+        <label><input type="checkbox" name="locationcheckbox" value="gwalior">Gwalior</label>
+        <label style="float:  left"><input  name="locationcheckbox" type="checkbox" value="chennai">Chennai</label><br>
+        <label><input type="checkbox" name="locationcheckbox" value="jaipur">Jaipur </label>
+        <label style="float: left"><input  name="locationcheckbox"  type="checkbox" value="noida">Noida</label><br>
+        <label><input type="checkbox" name="locationcheckbox" value=ghaziabad>Ghaziabad</label>
+        <label style="float:  left"><input  name="locationcheckbox" value="coimbatore" type="checkbox">Coimbatore </label><br>
+        <label><input type="checkbox" name="locationcheckbox" value="Ahmedabad">Ahemdabad</label>
+        <label style="float:  left"><input  name="locationcheckbox" type="checkbox" value="meerut">Meerut</label><br>
+        <label><input type="checkbox" name="locationcheckbox" value="Surat">Surat </label>
+        <label style="float:  left"><input  name="locationcheckbox" type="checkbox" value="kolkata">Kolkata</label><br>
+         <label><input type="checkbox" name="locationcheckbox" value="bhopal">Bhopal</label>
+        <label style="float:  left"><input  name="locationcheckbox" type="checkbox" value="indore">Indore </label><br>
+        <label><input type="checkbox" name="locationcheckbox" value="kanpur">Kanpur </label>
+        <label style="float:  left"><input  name="locationcheckbox" type="checkbox" value="greaternoida">Greater Noida </label></div>
         
 
 </div>
 
-<div class="more-education-details" style="display:none;">
+<div class="more-education-details more-education-details-details" style="display:none;">
     <div class="border border-secondary text-secondary p-2"style="text-align: center">
         <b >Education</b>
         <div class="cross-icon">X</div>
     </div>
     <div style="padding:40px;">
-        <label><input type="checkbox" >Any Graduate</label>
-        <label style="float:left"><input type="checkbox">BCA</label><br>
-        <label><input type="checkbox">B.Ed</label>
-        <label style="float: left"><input type="checkbox">Other Graduate</label><br>
-        <label><input type="checkbox">Btech/B.E</label>
-        <label style="float: left"><input type="checkbox">M.Ed</label><br> 
-        <label><input type="checkbox">Any Postgraduate</label>
-        <label style="float:  left"><input type="checkbox">M.Tech</label><br>
-        <label><input type="checkbox">Post Graduation Not Required</label>        
-        <label style="float:  left"><input type="checkbox">MS/M.Sc(Science)</label><br>
-        <label ><input type="checkbox">Graduation Not Required </label>
-        <label style="float: left"><input type="checkbox">MBA/PGDM</label><br>
-        <label><input type="checkbox">B.A</label>
-        <label style="float:  left"><input type="checkbox">M.A </label><br>
-        <label><input type="checkbox">B.Sc</label>
-        <label style="float:  left"><input type="checkbox">Medical-MS/MD</label><br>
-        <label><input type="checkbox">MBBS </label>
-        <label style="float:  left"><input type="checkbox">MCA</label><br>
-         <label><input type="checkbox">Diploma</label>
-        <label style="float:  left"><input type="checkbox">M.Com </label><br>
-        <label ><input type="checkbox">B.Com </label>
-        <label style="float:  left"><input type="checkbox">M.Pharma </label><br>
-        <label ><input type="checkbox">B.B.A/B.M.S</label>
-        <label style="float:  left"><input type="checkbox">Other </label><br>
-        <label ><input type="checkbox">B.Pharma </label>
+        <label><input type="checkbox"  name="educationcheckbox" value="Any Graduate">Any Graduate</label>
+        <label style="float:left"><input type="checkbox" name="educationcheckbox" value="BCA">BCA</label><br>
+        <label><input type="checkbox" name="educationcheckbox" value="B.Ed">B.Ed</label>
+        <label style="float: left"><input type="checkbox" name="educationcheckbox" value="Other Graduate">Other Graduate</label><br>
+        <label><input type="checkbox" name="educationcheckbox" value="Btech/B.E">Btech/B.E</label>
+        <label style="float: left"><input type="checkbox" name="educationcheckbox" value="M.Ed">M.Ed</label><br> 
+        <label><input type="checkbox" name="educationcheckbox" value="Any Postgraduate">Any Postgraduate</label>
+        <label style="float:  left"><input type="checkbox" name="educationcheckbox" value="M.Tech">M.Tech</label><br>
+        <label><input type="checkbox" name="educationcheckbox" value="Post Graduation Not Required">Post Graduation Not Required</label>        
+        <label style="float:  left"><input type="checkbox" name="educationcheckbox" value="MS/M.Sc(Science)">MS/M.Sc(Science)</label><br>
+        <label ><input type="checkbox" name="educationcheckbox" value="Graduation Not Required">Graduation Not Required </label>
+        <label style="float: left"><input type="checkbox" name="educationcheckbox" value="MBA/PGDM">MBA/PGDM</label><br>
+        <label><input type="checkbox" name="educationcheckbox" value="BA">B.A</label>
+        <label style="float:  left"><input type="checkbox" name="educationcheckbox" value="MA">M.A </label><br>
+        <label><input type="checkbox" name="educationcheckbox" value="BSc">B.Sc</label>
+        <label style="float:  left"><input type="checkbox" name="educationcheckbox" value="Medical-MS/MD">Medical-MS/MD</label><br>
+        <label><input type="checkbox" name="educationcheckbox" value="MBBS">MBBS </label>
+        <label style="float:  left"><input type="checkbox" name="educationcheckbox" value="MCA">MCA</label><br>
+         <label><input type="checkbox" name="educationcheckbox" value="Diploma">Diploma</label>
+        <label style="float:  left"><input type="checkbox" name="educationcheckbox" value="M.Com">M.Com </label><br>
+        <label ><input type="checkbox" name="educationcheckbox" value="BCom">B.Com </label>
+        <label style="float:  left"><input type="checkbox" name="educationcheckbox" value="M.Pharma">M.Pharma </label><br>
+        <label ><input type="checkbox" name="educationcheckbox" value="BBA/BMS">B.B.A/B.M.S</label>
+        <label style="float:  left"><input type="checkbox" name="educationcheckbox" value="Other">Other </label><br>
+        <label ><input type="checkbox" name="educationcheckbox" value="BPharma">B.Pharma</label>
 
     </div>
         
 
 </div>
 
-<div class="more-salary-details" style="display:none;">
+<div class="more-salary-details more-salary-details-details" style="display:none;">
     <div class="border border-secondary text-secondary p-2"style="text-align: center">
         <b >Salary</b>
         <div class="cross-icon">X</div>
     </div>
     <div style="padding:40px;">
-        <label><input type="checkbox" >0-3 Lacks</label>
-        <label style="float:left"><input type="checkbox">15-25 Lacks</label><br>
-        <label><input type="checkbox">3-6 Lacks</label>
-        <label style="float: left"><input type="checkbox">15-50</label><br>
-        <label><input type="checkbox">6-10 Lacks</label>
-        <label style="float: left"><input type="checkbox">100 + Lacks</label><br> 
-        <label><input type="checkbox">10-15 Lacks</label>
+        <label><input type="checkbox"  name="salarycheckbox" value="0">0-3 Lacks</label>
+        <label style="float:left"><input type="checkbox" name="1500000" value="1500000">15-25 Lacks</label><br>
+        <label><input type="checkbox" name="salarycheckbox" value="300000">3-6 Lacks</label>
+        <label style="float: left"><input type="checkbox" name="salarycheckbox" value="2500000">25-50</label><br>
+        <label><input type="checkbox" name="salarycheckbox" value="600000">6-10 Lacks</label>
+        <label style="float: left"><input type="checkbox" name="salarycheckbox" value="10000000">100 + Lacks</label><br> 
+        <label><input type="checkbox" name="salarycheckbox" value="1000000" >10-15 Lacks</label>
     </div>
 </div>  
 
-<div class="more-schools-details" style="display:none;">
+<div class="more-schools-details more-schools-details-details" style="display:none;">
     <div class="border border-secondary text-secondary p-2"style="text-align: center">
         <b >Top Comapanies</b>
         <div class="cross-icon">X</div>
     </div>
     <div style="padding:40px;">
 <label><input type="checkbox" >Amity University</label>
-<label style="float:left"><input type="checkbox">Genpact</label><br> 
-<label style="float:left"><input type="checkbox">Amazon Development Centre</label>
-<label style="float:left"><input type="checkbox"> Modern Vidya Niketan</label><br> 
-<label style="float:left"><input type="checkbox">NIIT</label>
-<label style="float:left"><input type="checkbox">Hurix Systems</label><br>
-<label style="float:left"><input type="checkbox">Manik Travels</label>
-<label style="float:left"><input type="checkbox">Lionbridge</label><br>
-<label style="float:left"><input type="checkbox"> Technologies</label>
-<label style="float:left"><input type="checkbox">Informatica</label><br>
-<label style="float:left"><input type="checkbox">GlobalLogic Technologies</label>
-<label style="float:left"><input type="checkbox">Concentrix Daksh </label><br>
-<label style="float:left"><input type="checkbox">G4S Corporate Services</label>
-<label style="float:left"><input type="checkbox">Majestic Hotels </label><br>
-<label style="float:left"><input type="checkbox">WNS </label>
-<label style="float:left"><input type="checkbox">ASAP Info Systems </label><br>
-<label style="float:left"><input type="checkbox">FIS Global Business </label>
-<label style="float:left"><input type="checkbox">Apeejay Stya Group </label><br>
-<label style="float:left"><input type="checkbox">NIIT Technologies </label>
-<label style="float:left"><input type="checkbox">Bajaj Capital</label><br>
-<label style="float:left"><input type="checkbox">K Raheja Corp</label>
-<label style="float:left"><input type="checkbox">Eleme Petrochemicals </label><br>
-<label style="float:left"><input type="checkbox">Amarprakash Developers</label> 
-<label style="float:left"><input type="checkbox">Narayana Health</label>
+<label style="float:left"><input  name="schoolscheckbox" type="checkbox" value="Genpact">Genpact</label><br> 
+<label style="float:left"><input  name="schoolscheckbox" type="checkbox" value="Amazon Development Centre">Amazon Development Centre</label>
+<label style="float:left"><input  name="schoolscheckbox" type="checkbox" value="Modern Vidya Niketan"> Modern Vidya Niketan</label><br> 
+<label style="float:left"><input  name="schoolscheckbox" type="checkbox" value="NIIT">NIIT</label>
+<label style="float:left"><input  name="schoolscheckbox" type="checkbox" value="Hurix System">Hurix Systems</label><br>
+<label style="float:left"><input  name="schoolscheckbox" type="checkbox" value="Manik Travels">Manik Travels</label>
+<label style="float:left"><input  name="schoolscheckbox" type="checkbox" value="Lionbridge">Lionbridge</label><br>
+<label style="float:left"><input  name="schoolscheckbox" type="checkbox" value="Technologies"> Technologies</label>
+<label style="float:left"><input  name="schoolscheckbox" type="checkbox" value="Informatica">Informatica</label><br>
+<label style="float:left"><input  name="schoolscheckbox" type="checkbox" value="GlobalLogic Technologies">GlobalLogic Technologies</label>
+<label style="float:left"><input  name="schoolscheckbox" type="checkbox" value="Concentrix Daksh">Concentrix Daksh</label><br>
+<label style="float:left"><input  name="schoolscheckbox" type="checkbox" value="G4S Corporate Services">G4S Corporate Services</label>
+<label style="float:left"><input  name="schoolscheckbox" type="checkbox" value="Majestic Hotels">Majestic Hotels</label><br>
+<label style="float:left"><input  name="schoolscheckbox" type="checkbox" value="WNS">WNS</label>
+<label style="float:left"><input  name="schoolscheckbox" type="checkbox" value="ASAP Info Systems">ASAP Info Systems</label><br>
+<label style="float:left"><input  name="schoolscheckbox" type="checkbox" value="FIS Global Business">FIS Global Business</label>
+<label style="float:left"><input  name="schoolscheckbox" type="checkbox" value="Apeejay Stya Group">Apeejay Stya Group</label><br>
+<label style="float:left"><input  name="schoolscheckbox" type="checkbox" value="NIIT Technologies">NIIT Technologies</label>
+<label style="float:left"><input  name="schoolscheckbox" type="checkbox" value="Bajaj Capital">Bajaj Capital</label><br>
+<label style="float:left"><input  name="schoolscheckbox" type="checkbox" value="K Raheja Corp">K Raheja Corp</label>
+<label style="float:left"><input  name="schoolscheckbox" type="checkbox" value="Eleme Petrochemicals">Eleme Petrochemicals</label><br>
+<label style="float:left"><input  name="schoolscheckbox" type="checkbox" value="Amarprakash Developers">Amarprakash Developers</label> 
+<label style="float:left"><input  name="schoolscheckbox" type="checkbox" value="Narayana Health">Narayana Health</label>
         
     </div>
 </div>  

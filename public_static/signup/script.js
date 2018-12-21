@@ -13,7 +13,7 @@ if(password.val()!=retypepassword.val()){
     retypepassword.val('')
 
 }   
-})
+
  
 
 $.post('/details',{
@@ -21,7 +21,7 @@ $.post('/details',{
     email:email.val(),
     password:password.val()
         })
-    
+    })    
 
 
     $('.google').click(()=>{
@@ -31,5 +31,23 @@ $.post('/details',{
 
 
 
-
+    $('.profile-name').css('display','none')
+    var dfgh=localStorage.getItem("name");
+    if(localStorage.getItem('name')===null){
+        console.log('Not login')
+        $('.login-signup').css('display','inline-block')
+    $('.profile-name').css('display','none')
+    }
+    else{
+        $('.login-signup').css('display','none')
+    $('.profile-name').css('display','inline')
+    $('.profile-name span').append(`${dfgh}`)
+        console.log(dfgh)
+    }
+    
+    
+    $('.signout-btn').click(()=>{
+        localStorage.removeItem("name");
+    })
+    
 })

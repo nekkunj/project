@@ -58,7 +58,7 @@ function makedescription(recruiter){
     </div>
     <div class="salary-and-experience p-2">
         <span class="pl-5 text-dark">
-            <img class="mb-1" src="https://png.icons8.com/windows/1600/rupee.png" width="18" > ${recruiter.min_salary} - ${recruiter.max_salary}
+            <img class="mb-1 rupee-image"  src="https://png.icons8.com/windows/1600/rupee.png" width="18" > <img class="mb-1 dollar-image" src="https://www.freepngimg.com/thumb/dollar/1-2-dollar-transparent-thumb.png" width="18" > ${recruiter.min_salary} - ${recruiter.max_salary}
     </span>
     <span class="pl-5 text-dark"><img src="http://cdn.onlinewebfonts.com/svg/img_356662.png" class="mb-1 mr-1" width="14.5"> 
     ${recruiter.minimum}-${recruiter.maximum} yrs
@@ -77,38 +77,55 @@ function makedescription(recruiter){
     </div>
     </div>
     <div class=".again-buttons ">
-    <span >
-    <a class="btn btn-warning  " href="#">Login/Register to Apply</a>
-     <a class="btn btn-success  " href="#">Apply without Registration</a>
-         </span>
+    <span>
+           <span class="login-signup">
+            <a class="btn btn-success " href="/account/login">Login/Register to Apply</a>
+            <a class="btn btn-warning  " href="#">Apply without Registration</a>
+</span>
+<span class="profile-name">
+<a class="btn btn-primary m-2" href="#">Apply here</a> 
+</span>
+    </span>
     </div>
     </div>
     `)
+    $('.profile-name').css('display','none')
+    var dfgh=localStorage.getItem("name");
+    if(localStorage.getItem('name')===null){
+        console.log('Not login')
+        $('.login-signup').css('display','inline-block')
+    $('.profile-name').css('display','none')
+    }
+    else{
+        $('.login-signup').css('display','none')
+    $('.profile-name').css('display','inline')
+    $('.profile-name span').append(`${dfgh}`)
+        console.log(dfgh)
+    }
     
+    
+    $('.signout-btn').click(()=>{
+        localStorage.removeItem("name");
+    })
+    
+  
+   if(recruiter.salary_type=='Dollar'){
+       $('.rupee-image').css('display','none')
+   }
+   else {
+    $('.dollar-image').css('display','none')
+   }
+
     description.append(`
     <h5><b >Job Description</b></h5><br>
                   
     <h6 class="m-0">Job Summary</h6>
-    <br>${recruiter.Job_Description}
+    <br>${'<p>'+recruiter.Job_Description.split('\n').join('</p><p>')+'</p>'}
     <br><br>
-    <b>KeySkills</b>: 
+    <b>Keywords</b>: 
     <br>
-    <ul style="display:flex;list-style-type: none;flex-wrap: wrap;padding:10px;">
-    <li class="bg-secondary m-1">${recruiter.keywords}</li>
-    <li class="bg-secondary m-1"> PGT Teacher</li>
-    <li class="bg-secondary m-1"> English Teaching</li>
-    <li class="bg-secondary m-1"> Physics Chemistry</li>
-    <li class="bg-secondary m-1"> Social Studies</li>
-    <li class="bg-secondary m-1"> Hindi Biology</li>
-    <li class="bg-secondary m-1"> Botany Zoology</li>
-    <li class="bg-secondary m-1"> Maths</li>
-    <li class="bg-secondary m-1"> Kg Teacher</li>
-    <li class="bg-secondary m-1"> Primary Teacher</li>
-    <li class="bg-secondary m-1"> Pre Primary Teacher</li>
-    <li class="bg-secondary m-1"> Art Librarian Tutor</li>
-    <li class="bg-secondary m-1"> Academic Coordinator</li>
-    <li class="bg-secondary m-1"> Principal Dean</li>
-    <li class="bg-secondary m-1"> Academics</li>
+    <ul style="display:flex;list-style-type: none;flex-wrap: wrap;padding:10px;" id="keywords-append">
+    
     </ul>
     <br><br>
     <h6>Desired Candidate Profile</h6><br>
@@ -117,11 +134,11 @@ function makedescription(recruiter){
     Education-<br>
     <div class="mr-5" style="display:flex">
         <span class="text-secondary">UG:</span>
-        <span> ${recruiter.ug}  Any Graduate - Any Specialization, B.Sc - Any Specialization, Bio-Chemistry, Biology, Botany, Chemistry, Maths, Microbiology, Physics, Statistics, Zoology, B.A - Any Specialization, Arts&Humanities, English, Fine Arts, Hindi, History, Political Science, Sanskrit, Sociology, B.Ed - Education, B.El.Ed - Any Specialization, Elementary Education</span>
+        <span> ${recruiter.ug}  </span>
     </div>
     <div style="display:flex">
     <span class="text-secondary">PG:</span>
-    <span>${recruiter.pg} MS/M.Sc(Science) - Any Specialization, Bio-Chemistry, Biology, Botany, Biotechnology, Chemistry, Geology, Maths, Microbiology, Physics, Statistics, Zoology, M.A - Any Specialization, English, Fine arts, Hindi, History, Maths, Political Science, Sanskrit, Sociology, M.Ed - Education</span>
+    <span>${recruiter.pg} </span>
     </div>
     <div style="display:flex">
     <span class="text-secondary">Doctorate:</span>
@@ -158,6 +175,11 @@ function makedescription(recruiter){
     
     </div>
     `)
+    var key_arr=recruiter.keywords.split(',')
+$.each(key_arr,function(key,val){
+    $('#keywords-append').append(`
+    <li class="bg-secondary m-1">${val}</li>`) 
+})
 }
 
 $(()=>{
@@ -173,6 +195,25 @@ $(()=>{
 
 // //   $.get('/title/delete')
 //     })
+
+$('.profile-name').css('display','none')
+var dfgh=localStorage.getItem("name");
+if(localStorage.getItem('name')===null){
+    console.log('Not login')
+    $('.login-signup').css('display','inline-block')
+$('.profile-name').css('display','none')
+}
+else{
+    $('.login-signup').css('display','none')
+$('.profile-name').css('display','inline')
+$('.profile-name span').append(`${dfgh}`)
+    console.log(dfgh)
+}
+
+
+$('.signout-btn').click(()=>{
+    localStorage.removeItem("name");
+})
 })
 
 

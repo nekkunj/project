@@ -6,7 +6,21 @@ const connection=mysql.createConnection({
     user:'root',
     password:'kvsector3'
 })
-
+function finduserdetails(usern){
+    return new Promise(function (resolve, reject) {
+        connection.query(
+            `SELECT * FROM userdetails WHERE username=(?)`,
+            [usern],
+            function(err, rows, cols) {
+                if (err) {
+                    reject(err)
+                } else {
+                    resolve(rows)
+                }
+            }
+        )
+    }) 
+}
 function getuserdetails () {
 
     return new Promise(function (resolve, reject) {
@@ -112,6 +126,6 @@ function addtitle(Job_Title){
 
 
 exports=module.exports={
-    adduserdetails,getuserdetails,gettitle,addtitle
+    adduserdetails,getuserdetails,gettitle,addtitle,finduserdetails
 }
 

@@ -1,6 +1,6 @@
 const roote = require('express').Router()
 const db=require('../login_database')
-
+const pass=require('../passport')
 roote.get('/', (req,res)=>{
     
     db.getuserdetails()
@@ -24,6 +24,12 @@ res.redirect('/')
     })
 })
 
+roote.post('/check',(req,res)=>{
+  pass.authenticate('local',{
+      failureRedirect:'/account/login',
+      successRedirct:'/'
+  })
+})
 
 exports = module.exports = {
     roote

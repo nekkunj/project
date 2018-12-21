@@ -13,34 +13,35 @@
 <link rel="stylesheet" href="style.css">
 <script src="script.js"></script>
 </head>
-<body>
-        <nav class="navbar navbar-expand-lg  navbar-dark  fixed-top " style="background-color: rgba(247,238,238,0.5)">
-                <a href="https://www.naukri.com/"><img class="navbar-brand ml-5" id="brand" src="Untitled.png" alt="logo">
+<body background="Untitledcube.jpg">
+        <nav class="navbar navbar-expand-lg  navbar-dark  fixed-top " style="background-color: rgba(247, 238, 238,1)">
+                <a href="Untitled.png"><img class="navbar-brand " style="margin-left: 3%" id="brand" src="Untitled.png" alt="logo">
                 </a>    
             <button class="navbar-toggler bg-dark " type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon " ></span>
                 </button>
                 
+                
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                         
                     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <li class="nav-item active">
-                      <a class="nav-link text-dark" href="#">Home <span class="sr-only">(current)</span></a>
+                    <li class="nav-item nav-item-home" >
+                      <a class="nav-link text-dark" href="/">Home </a>
                     </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link text-dark dropdown-toggle" href="#"  id="navbardrop" data-toggle="dropdown">Jobs</a>
-                      <div class="dropdown-menu p-0">
+                    <li class="nav-item dropdown nav-item-jobs">
+                      <a class="nav-link text-dark dropdown-toggle  " href="#"  id="navbardrop" data-toggle="dropdown">Jobs</a>
+                      <div class="dropdown-menu pt-0 pb-0">
                         
-    <div  style="background-color: #343a40" >                    
+    <div  style="background-color: #343a40 " class="mt-0" >                    
         
         <form action="" class="search-form">
     
             <label for="search" class="sr-only">Search</label>
             <img class="form-control-feedback" src="https://cdn1.iconfinder.com/data/icons/hawcons/32/698838-icon-111-search-128.png">
-            <input type="text" class="hover-input-search" name="search" id="search" placeholder="search">
+            <input type="text" class="hover-input-search " name="search" id="search" placeholder="search">
               
     </form>
-    <div style='display: flex;border-top: solid 1px grey;'>             
+    <div class="pt-4" style='display: flex;'>             
         <span class="m-2"><span style="color: gray;">Job Titles</span>
             <a class="dropdown-item text-light" href="#">English Teacher</a>
             <a class="dropdown-item text-light" href="#">Science Teacher</a>
@@ -52,23 +53,23 @@
             <a href="#" >view all</a>                        
         </span>
                         <span class="m-2 "><span style="color: gray;">Location</span>
-                            <a class="dropdown-item text-light" href="#">Jobs in Delhi</a>
-                            <a class="dropdown-item text-light" href="#">Jobs in Mumbai</a>
-                            <a class="dropdown-item text-light" href="#">Jobs in Chennai</a>
-                            <a class="dropdown-item text-light" href="#">Jobs in Chandigarh</a>
-                            <a class="dropdown-item text-light" href="#">Jobs in Pune</a>
-                            <a class="dropdown-item text-light" href="#">Jobs in Kolkata</a>
-                            <a class="dropdown-item text-light" href="#">Jobs in Jaipur</a>
-                            <a href="#" >View all</a>
+                            <a class="dropdown-item text-light" href="/Jobs_in_delhi">Jobs in Delhi</a>
+                            <a class="dropdown-item text-light" href="/Jobs_in_mumbai">Jobs in Mumbai</a>
+                            <a class="dropdown-item text-light" href="/Jobs_in_chennai">Jobs in Chennai</a>
+                            <a class="dropdown-item text-light" href="/Jobs_in_chandigarh">Jobs in Chandigarh</a>
+                            <a class="dropdown-item text-light" href="/Jobs_in_pune">Jobs in Pune</a>
+                            <a class="dropdown-item text-light" href="/Jobs_in_kolkata">Jobs in Kolkata</a>
+                            <a class="dropdown-item text-light" href="/Jobs_in_jaipur">Jobs in Jaipur</a>
+                            <a href="/job_search_locations" >View all</a>
                         </span>
                         <span class="m-2"><span style="color: gray;">Qualification</span>
-                            <a class="dropdown-item text-light" href="#">B.Ed</a>
-                            <a class="dropdown-item text-light" href="#">B.A</a>
-                            <a class="dropdown-item text-light" href="#">B.Sc</a>
-                            <a class="dropdown-item text-light" href="#">B.Tech</a>
-                            <a class="dropdown-item text-light" href="#">B.B.A</a>
-                            <a class="dropdown-item text-light" href="#">M.Ed</a>
-                            <a class="dropdown-item text-light" href="#">DIET</a>
+                            <a class="dropdown-item text-light" href="/BEd_Jobs">B.Ed</a>
+                            <a class="dropdown-item text-light" href="/BA_Jobs">B.A</a>
+                            <a class="dropdown-item text-light" href="/BSc_jobs">B.Sc</a>
+                            <a class="dropdown-item text-light" href="/BTech_Jobs">B.Tech</a>
+                            <a class="dropdown-item text-light" href="/BBA_Jobs">B.B.A</a>
+                            <a class="dropdown-item text-light" href="/MEd_Jobs">M.Ed</a>
+                            <a class="dropdown-item text-light" href="/DIET_Jobs">DIET</a>
                             <a href="#" >view all</a>
     
                         </span>
@@ -78,12 +79,12 @@
     
                 
                     
-                    <li class="nav-item dropdown">
+                    <li class="nav-item dropdown nav-item-advice">
                       <a class="nav-link text-dark dropdown-toggle" href="#" data-toggle="dropdown">Carrer advice</a>
                       <div class="dropdown-menu p-0">
                           <div style="background-color:#343a40">
-                            <a class="dropdown-item text-light" href="#">Job Searching tips</a>
-                            <a class="dropdown-item text-light" href="#">CV writing tips</a>
+                            <a class="dropdown-item text-light" href="/articles/howtogetajob">Job Searching tips</a>
+                            <a class="dropdown-item text-light" href="/articles/resume_writing_tips">CV writing tips</a>
                             <a class="dropdown-item text-light" href="#">Interview Preparation</a>
                             <a class="dropdown-item text-light" href="#">Expert speak</a>
                             <a class="dropdown-item text-light" href="#">FAQ</a>
@@ -94,10 +95,9 @@
                     </li>
                     
                   </ul>
-                  <form class="search form form-inline my-2 my-lg-0">
-                        </form>
+                  
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item dropdown">
+                    <li class="nav-item dropdown nav-item-employe">
                             <a class="nav-link text-dark dropdown-toggle" href="#" data-toggle="dropdown">For Employers</a>
                             <div class="dropdown-menu p-0">
                                     <div style="background-color: #343a40;display: flex;">
@@ -108,21 +108,26 @@
                                             </div>
                                             <div>
                                             <a class="dropdown-item text-light" href="#">Login</a>
-                                            <a class="dropdown-item text-light" href="#">Register</a>
+                                            <a class="dropdown-item text-light" href="/recruiter">Register</a>
                                             <a class="dropdown-item text-light" href="#">Try free CV Search</a>
                                                 </div>
                                     </div>
                             </div>
                     </li>
                 </ul>
-                <a class="btn btn-outline-success ml-2" href="/login/index.html">Login</a>
-                <a class="btn btn-outline-warning ml-2 " href="/signup/index.html">SignUp</a>
-    
+               <span class="login-signup">
+                <a class="btn btn-outline-success ml-2" href="/account/login">Login</a>
+                <a class="btn btn-outline-warning ml-2 " href="/account/signup">SignUp</a>
+    </span>
+    <span class="profile-name">
+    Hi <span></span>
+        <a class="btn btn-outline-warning ml-2 signout-btn" href="/">SignOut</a>
+    </span>
                 </div>
               </nav>
              
               <button class="btn btn-info"onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-<div class="container-fluid p-0" id="card" style="height:500px;width: 100%;background-image:url(http://hdlatestwallpaper.com/wp-content/uploads/2014/04/3D-Red-and-Black-Blocks-HD-Wallpaper.jpg);">
+<div class="container-fluid p-0" id="card" style="height:500px;width: 100%;background-image:url(http://alliswall.com/file/3117/1920x1200/16:9/3d-red-and-black-cubes-wallpaper.jpg)  " >
              
                      
                 
@@ -146,10 +151,14 @@
 </span>
 
 <div class=" again-buttons container col-10 col-sm-10 col-lg-6 col-md-8" >
-    <span>
-    <a class="btn btn-warning   "  href="#">Login/Register to Apply</a>
-     <a class="btn btn-success   " href="#" >Apply without Registration</a>
-         </span>
+        <span class="login-signup">
+                <a class="btn btn-success " href="/account/login">Login/Register to Apply</a>
+                <a class="btn btn-warning  " href="#">Apply without Registration</a>
+    </span>
+    <span class="profile-name">
+            <a class="btn btn-primary m-2" href="#">Apply here</a>
+
+    </span>
 </div>
 
 <div class="container-fluid col-10 p-0" style="color:gray">IEIL has taken all reasonable steps to ensure that information on this site is authentic. Applicants are advised to research bonafides of advertisers independently. IEIL shall not have any responsibility in this regard. We also recommend that you visit Security Guidelines and Terms and Conditions for more comprehensive information on this aspect.
@@ -158,7 +167,8 @@
         
          View Salaries
         </div>
-<footer class="bg-dark container-fluid pl-5">
+<div style="background-color: green" id="testing-desc"></div>
+        <footer class="bg-dark container-fluid pl-5">
         <div class="row ">
           <div class="column col-4 ">
               <b class=" text-light font-size"><h6>Information</h6></b>

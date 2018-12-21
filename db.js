@@ -26,14 +26,14 @@ function getrecruiterdetails () {
 
 function addrecruiterdetails(Job_Title,Job_Description,keywords,minimum,maximum,min_salary
     ,max_salary,location,employment_type,job_type,recruiter_name,company_name,address,company_details,salary_type,industry,role,
-    email_address,more_salary_details,functional_area,telephone,website)
+    email_address,more_salary_details,functional_area,telephone,website,ug,pg)
 {  
-
+    console.log(ug,pg,location)
     return new Promise((resolve, reject)=>{
         connection.query(
-            `INSERT INTO recruiter_details(Job_Title,Job_Description,Keywords,minimum,maximum,min_salary,max_salary,employment_type,job_type,recruiter_name,company_name,address,company_details,salary_type,industry,role,email_address,more_salary_details,functional_area,telephone,website) 
-            VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)`,
-            [Job_Title,Job_Description,keywords,minimum,maximum,min_salary,max_salary,employment_type,job_type,recruiter_name,company_name,address,company_details,salary_type,industry,role,email_address,more_salary_details,functional_area,telephone,website],
+            `INSERT INTO recruiter_details(Job_Title,Job_Description,Keywords,minimum,maximum,min_salary,max_salary,location,employment_type,job_type,recruiter_name,company_name,address,company_details,salary_type,industry,role,email_address,more_salary_details,functional_area,telephone,website,ug,pg) 
+            VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)`,
+            [Job_Title,Job_Description,keywords,minimum,maximum,min_salary,max_salary,location,employment_type,job_type,recruiter_name,company_name,address,company_details,salary_type,industry,role,email_address,more_salary_details,functional_area,telephone,website,ug,pg],
             function(err,rows,cols) {
                 if (err) {
                     reject(err)

@@ -259,10 +259,30 @@ if(rsordollar.val()==='Rs'){
     })
 
 })
+var locationstr=""
+var ugstr=""
+var pgstr=""
+// $('#company-name').click(()=>{
+//     var locationstr=""
+// var ugstr=""
+// var pgstr=""
+    
+     
+//      console.log(locationstr,ugstr,pgstr)
+// })
 
+// var key_array=keywords.val().split(',')
 
 submit_button.click(()=>{
-
+    $('input[name="locationthemes"]:checked').each(function() {
+        locationstr+=(this.value)+",";
+     });
+     $('input[name="ugsuggest"]:checked').each(function() {
+        ugstr+=(this.value)+",";
+     });
+     $('input[name="pgsuggest"]:checked').each(function() {
+        pgstr+=(this.value)+",";
+     });
     if(rsordollar.val()==='Rs'){rupee_or_dollar='INR'}
   
 $.post('/api',{
@@ -273,7 +293,7 @@ $.post('/api',{
       maximum:maximumyear.val(),
       min_salary:minannualsalary.val(),
       max_salary:maxannualsalary.val(),
-      location:location.val(),
+      location:locationstr,
       employment_type:$('.employment-details-one>input:checked').val(),
       job_type:$('.employment-details-two>input:checked').val(),
       recruiter_name:$('#recruiter-name').val(),
@@ -287,7 +307,9 @@ $.post('/api',{
       more_salary_details:$('#more-salary-details').val(),
       functional_area:$('#functional-area').val()
       ,telephone:$('#telephone').val(),
-      website:$('#website').val()
+      website:$('#website').val(),
+      ug:ugstr,
+      pg:pgstr
      })
    })
 
@@ -300,7 +322,7 @@ if(i%2===0){
     locationlist.css('display','block')
     for(place of places){    
     locationlist.append(`
-    <label ><input class="location-list-label"  value="${place}" type="checkbox" onclick="showselectedlocations($(this))" >${place}</label><br>
+    <label ><input class="location-list-label"  name="locationthemes" value="${place}" type="checkbox" onclick="showselectedlocations($(this))" >${place}</label><br>
     `)
     }
  }
@@ -319,7 +341,7 @@ pglist.css('display','none');
 uglist.css('display','block')
     for(ug of ugs){    
     uglist.append(`
-    <label ><input class="ug-list-label"  value="${ug}" type="checkbox" onclick="showug($(this))" >${ug}</label><br>
+    <label ><input class="ug-list-label" name="ugsuggest" value="${ug}" type="checkbox" onclick="showug($(this))" >${ug}</label><br>
     `)
     }
  }
@@ -339,7 +361,7 @@ uglist.css('display','none');
 pglist.css('display','block')
     for(pg of pgs){    
     pglist.append(`
-    <label ><input class="pg-list-label"  value="${pg}" type="checkbox" onclick="showpg($(this))" >${pg}</label><br>
+    <label ><input class="pg-list-label" name="pgsuggest" value="${pg}" type="checkbox" onclick="showpg($(this))" >${pg}</label><br>
     `)
     }
  }
@@ -443,14 +465,34 @@ $('#change').click(()=>{
 })
 
 
-$('#keywords').autocomplete({
-    source: availableTags,
-  
-      
-      select: function (suggestion) {
-    key=suggestion.value;
-    }
-})
+// $('#keywords').tags({
+//     unique: true,
+//     maxTags: 5
+// });
+$('#keywords').tags({
+       requireData:true,
+       maxTags:20
+    }).autofill({
+        data: ["javascript","jquery","mysql","sean","clark"]
+    });
 salarycalculator()
+$('.profile-name').css('display','none')
+var dfgh=localStorage.getItem("name");
+if(localStorage.getItem('name')===null){
+    console.log('Not login')
+    $('.login-signup').css('display','inline-block')
+$('.profile-name').css('display','none')
+}
+else{
+    $('.login-signup').css('display','none')
+$('.profile-name').css('display','inline')
+$('.profile-name span').append(`${dfgh}`)
+    console.log(dfgh)
+}
+
+
+$('.signout-btn').click(()=>{
+    localStorage.removeItem("name");
+})
 
 })
